@@ -1,13 +1,14 @@
 {
   "pages": [
+    "master/aptitude/aptitude",
+    "pages/myself/myself",
+    "components/about/about",
+    "components/qidong/qidong",
     "components/appraise/appraise",
     "pages/order/order",
-    "pages/myself/myself",
     "components/cart/cart",
     "components/detail/detail",
-    "components/qidong/qidong",
     "components/coupon/coupon",
-    "components/about/about",
     "components/collection/collection",
     "pages/index/index",
     "pages/shop/shop",

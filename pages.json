@@ -1,6 +1,31 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "master/aptitude/aptitude",
+			"style": {
+				"navigationBarTitleText": "资质验证"
+			}
+		},
+		{
+			"path": "pages/myself/myself",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "components/about/about",
+			"style": {
+				"navigationBarTitleText": "关于我们"
+			}
+		},
+		{
+			"path": "components/qidong/qidong",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
 			"path": "components/appraise/appraise",
 			"style": {
 				"navigationBarTitleText": "评价"
@@ -12,13 +37,7 @@
 				"navigationBarTitleText": "我的订单"
 			}
 		},
-		{
-			"path": "pages/myself/myself",
-			"style": {
-				"navigationBarTitleText": "",
-				"navigationStyle": "custom"
-			}
-		},
+
 		{
 			"path": "components/cart/cart",
 			"style": {
@@ -32,12 +51,7 @@
 				"navigationBarTitleText": "订单详情"
 			}
 		},
-		{
-			"path": "components/qidong/qidong",
-			"style": {
-				"navigationStyle": "custom"
-			}
-		},
+
 
 		{
 			"path": "components/coupon/coupon",
@@ -45,14 +59,6 @@
 				"navigationBarTitleText": "我的优惠卷"
 			}
 		},
-		{
-			"path": "components/about/about",
-			"style": {
-				"navigationBarTitleText": "关于我们"
-			}
-		},
-
-
 		{
 			"path": "components/collection/collection",
 			"style": {
@@ -106,14 +112,12 @@
 		// 	"navigationBarTitleText": "我的优惠卷"
 		// }
 		//      }
-
 		, {
 			"path": "components/address/address",
 			"style": {
 				"navigationBarTitleText": "收货地址"
 			}
 		}
-
 
 	],
 	"globalStyle": {

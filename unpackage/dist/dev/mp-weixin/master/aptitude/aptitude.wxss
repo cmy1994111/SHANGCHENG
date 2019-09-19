@@ -1,0 +1,33 @@
+
+.card-text.data-v-3367c6a8{
+			margin-top:124rpx ;
+			font-size: 30rpx;
+			margin-left: 30rpx;
+}
+.shop-adress.data-v-3367c6a8{
+			width: 690rpx;
+			height: 350rpx;
+			margin-left:30rpx ;
+}
+.shop-adress .editor-text.data-v-3367c6a8{
+		width:690rpx;
+		min-height:260rpx;
+		background:rgba(244,244,244,1);
+		border-radius: 5rpx;
+		font-size: 26rpx;
+		margin-top:35rpx ;
+}
+.nav .city.data-v-3367c6a8{
+		font-size: 50rpx;
+}
+.nav.data-v-3367c6a8{
+		width: 690rpx;
+		margin-left:29rpx ;
+		font-size: 30rpx;
+}
+.shop-adress .shop-adress-text.data-v-3367c6a8{
+		font-size: 30rpx;
+		color: #333;
+		margin:35rpx 0 35rpx 29rpx;
+}
+

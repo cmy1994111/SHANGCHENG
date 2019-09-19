@@ -755,7 +755,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -1608,6 +1608,40 @@ function normalizeComponent (
 /***/ }),
 
 /***/ 107:
+/*!********************************************************************************************************!*\
+  !*** C:/Users/PC/Documents/HBuilderProjects/0916-shop/main.js?{"page":"components%2Fchange%2Fchange"} ***!
+  \********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
+var _change = _interopRequireDefault(__webpack_require__(/*! ./components/change/change.vue */ 108));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_change.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
+
+/***/ }),
+
+/***/ 11:
+/*!********************************************************************************************************!*\
+  !*** C:/Users/PC/Documents/HBuilderProjects/0916-shop/main.js?{"page":"master%2Faptitude%2Faptitude"} ***!
+  \********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
+var _aptitude = _interopRequireDefault(__webpack_require__(/*! ./master/aptitude/aptitude.vue */ 12));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_aptitude.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
+
+/***/ }),
+
+/***/ 115:
 /*!**********************************************************************************************************!*\
   !*** C:/Users/PC/Documents/HBuilderProjects/0916-shop/main.js?{"page":"components%2Faddress%2Faddress"} ***!
   \**********************************************************************************************************/
@@ -1618,30 +1652,13 @@ function normalizeComponent (
 /* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
-var _address = _interopRequireDefault(__webpack_require__(/*! ./components/address/address.vue */ 108));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _address = _interopRequireDefault(__webpack_require__(/*! ./components/address/address.vue */ 116));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_address.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
 
 /***/ }),
 
-/***/ 11:
-/*!************************************************************************************************************!*\
-  !*** C:/Users/PC/Documents/HBuilderProjects/0916-shop/main.js?{"page":"components%2Fappraise%2Fappraise"} ***!
-  \************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
-
-var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
-var _appraise = _interopRequireDefault(__webpack_require__(/*! ./components/appraise/appraise.vue */ 12));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_appraise.default);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
-
-/***/ }),
-
-/***/ 118:
+/***/ 133:
 /*!*******************************************************************************************!*\
   !*** C:/Users/PC/Documents/HBuilderProjects/0916-shop/components/xiujun-evaluate/list.js ***!
   \*******************************************************************************************/
@@ -1714,7 +1731,7 @@ listData;exports.default = _default;
 
 /***/ }),
 
-/***/ 126:
+/***/ 141:
 /*!****************************************************************************!*\
   !*** C:/Users/PC/Documents/HBuilderProjects/0916-shop/common/city.data.js ***!
   \****************************************************************************/
@@ -53329,9 +53346,9 @@ var jd=[{
 /***/ }),
 
 /***/ 19:
-/*!*************************************************************************************************!*\
-  !*** C:/Users/PC/Documents/HBuilderProjects/0916-shop/main.js?{"page":"pages%2Forder%2Forder"} ***!
-  \*************************************************************************************************/
+/*!***************************************************************************************************!*\
+  !*** C:/Users/PC/Documents/HBuilderProjects/0916-shop/main.js?{"page":"pages%2Fmyself%2Fmyself"} ***!
+  \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -53339,8 +53356,8 @@ var jd=[{
 /* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
-var _order = _interopRequireDefault(__webpack_require__(/*! ./pages/order/order.vue */ 20));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_order.default);
+var _myself = _interopRequireDefault(__webpack_require__(/*! ./pages/myself/myself.vue */ 20));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_myself.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
 
 /***/ }),
@@ -58813,7 +58830,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -58834,14 +58851,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -58917,7 +58934,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -59295,9 +59312,9 @@ internalMixin(Vue);
 /***/ }),
 
 /***/ 27:
-/*!***************************************************************************************************!*\
-  !*** C:/Users/PC/Documents/HBuilderProjects/0916-shop/main.js?{"page":"pages%2Fmyself%2Fmyself"} ***!
-  \***************************************************************************************************/
+/*!******************************************************************************************************!*\
+  !*** C:/Users/PC/Documents/HBuilderProjects/0916-shop/main.js?{"page":"components%2Fabout%2Fabout"} ***!
+  \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -59305,8 +59322,8 @@ internalMixin(Vue);
 /* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
-var _myself = _interopRequireDefault(__webpack_require__(/*! ./pages/myself/myself.vue */ 28));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_myself.default);
+var _about = _interopRequireDefault(__webpack_require__(/*! ./components/about/about.vue */ 28));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_about.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
 
 /***/ }),
@@ -59343,9 +59360,9 @@ module.exports = g;
 /***/ }),
 
 /***/ 35:
-/*!****************************************************************************************************!*\
-  !*** C:/Users/PC/Documents/HBuilderProjects/0916-shop/main.js?{"page":"components%2Fcart%2Fcart"} ***!
-  \****************************************************************************************************/
+/*!********************************************************************************************************!*\
+  !*** C:/Users/PC/Documents/HBuilderProjects/0916-shop/main.js?{"page":"components%2Fqidong%2Fqidong"} ***!
+  \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -59353,8 +59370,8 @@ module.exports = g;
 /* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
-var _cart = _interopRequireDefault(__webpack_require__(/*! ./components/cart/cart.vue */ 36));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_cart.default);
+var _qidong = _interopRequireDefault(__webpack_require__(/*! ./components/qidong/qidong.vue */ 36));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_qidong.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
 
 /***/ }),
@@ -59372,6 +59389,57 @@ createPage(_cart.default);
 /***/ }),
 
 /***/ 43:
+/*!************************************************************************************************************!*\
+  !*** C:/Users/PC/Documents/HBuilderProjects/0916-shop/main.js?{"page":"components%2Fappraise%2Fappraise"} ***!
+  \************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
+var _appraise = _interopRequireDefault(__webpack_require__(/*! ./components/appraise/appraise.vue */ 44));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_appraise.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
+
+/***/ }),
+
+/***/ 51:
+/*!*************************************************************************************************!*\
+  !*** C:/Users/PC/Documents/HBuilderProjects/0916-shop/main.js?{"page":"pages%2Forder%2Forder"} ***!
+  \*************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
+var _order = _interopRequireDefault(__webpack_require__(/*! ./pages/order/order.vue */ 52));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_order.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
+
+/***/ }),
+
+/***/ 59:
+/*!****************************************************************************************************!*\
+  !*** C:/Users/PC/Documents/HBuilderProjects/0916-shop/main.js?{"page":"components%2Fcart%2Fcart"} ***!
+  \****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
+var _cart = _interopRequireDefault(__webpack_require__(/*! ./components/cart/cart.vue */ 60));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_cart.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
+
+/***/ }),
+
+/***/ 67:
 /*!********************************************************************************************************!*\
   !*** C:/Users/PC/Documents/HBuilderProjects/0916-shop/main.js?{"page":"components%2Fdetail%2Fdetail"} ***!
   \********************************************************************************************************/
@@ -59382,30 +59450,13 @@ createPage(_cart.default);
 /* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
-var _detail = _interopRequireDefault(__webpack_require__(/*! ./components/detail/detail.vue */ 44));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _detail = _interopRequireDefault(__webpack_require__(/*! ./components/detail/detail.vue */ 68));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_detail.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
 
 /***/ }),
 
-/***/ 51:
-/*!********************************************************************************************************!*\
-  !*** C:/Users/PC/Documents/HBuilderProjects/0916-shop/main.js?{"page":"components%2Fqidong%2Fqidong"} ***!
-  \********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
-
-var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
-var _qidong = _interopRequireDefault(__webpack_require__(/*! ./components/qidong/qidong.vue */ 52));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_qidong.default);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
-
-/***/ }),
-
-/***/ 59:
+/***/ 75:
 /*!********************************************************************************************************!*\
   !*** C:/Users/PC/Documents/HBuilderProjects/0916-shop/main.js?{"page":"components%2Fcoupon%2Fcoupon"} ***!
   \********************************************************************************************************/
@@ -59416,30 +59467,13 @@ createPage(_qidong.default);
 /* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
-var _coupon = _interopRequireDefault(__webpack_require__(/*! ./components/coupon/coupon.vue */ 60));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _coupon = _interopRequireDefault(__webpack_require__(/*! ./components/coupon/coupon.vue */ 76));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_coupon.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
 
 /***/ }),
 
-/***/ 67:
-/*!******************************************************************************************************!*\
-  !*** C:/Users/PC/Documents/HBuilderProjects/0916-shop/main.js?{"page":"components%2Fabout%2Fabout"} ***!
-  \******************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
-
-var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
-var _about = _interopRequireDefault(__webpack_require__(/*! ./components/about/about.vue */ 68));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_about.default);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
-
-/***/ }),
-
-/***/ 75:
+/***/ 83:
 /*!****************************************************************************************************************!*\
   !*** C:/Users/PC/Documents/HBuilderProjects/0916-shop/main.js?{"page":"components%2Fcollection%2Fcollection"} ***!
   \****************************************************************************************************************/
@@ -59450,13 +59484,13 @@ createPage(_about.default);
 /* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
-var _collection = _interopRequireDefault(__webpack_require__(/*! ./components/collection/collection.vue */ 76));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _collection = _interopRequireDefault(__webpack_require__(/*! ./components/collection/collection.vue */ 84));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_collection.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
 
 /***/ }),
 
-/***/ 83:
+/***/ 91:
 /*!*************************************************************************************************!*\
   !*** C:/Users/PC/Documents/HBuilderProjects/0916-shop/main.js?{"page":"pages%2Findex%2Findex"} ***!
   \*************************************************************************************************/
@@ -59467,13 +59501,13 @@ createPage(_collection.default);
 /* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
-var _index = _interopRequireDefault(__webpack_require__(/*! ./pages/index/index.vue */ 84));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _index = _interopRequireDefault(__webpack_require__(/*! ./pages/index/index.vue */ 92));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_index.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
 
 /***/ }),
 
-/***/ 91:
+/***/ 99:
 /*!***********************************************************************************************!*\
   !*** C:/Users/PC/Documents/HBuilderProjects/0916-shop/main.js?{"page":"pages%2Fshop%2Fshop"} ***!
   \***********************************************************************************************/
@@ -59484,25 +59518,8 @@ createPage(_index.default);
 /* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
-var _shop = _interopRequireDefault(__webpack_require__(/*! ./pages/shop/shop.vue */ 92));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _shop = _interopRequireDefault(__webpack_require__(/*! ./pages/shop/shop.vue */ 100));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_shop.default);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
-
-/***/ }),
-
-/***/ 99:
-/*!********************************************************************************************************!*\
-  !*** C:/Users/PC/Documents/HBuilderProjects/0916-shop/main.js?{"page":"components%2Fchange%2Fchange"} ***!
-  \********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
-
-var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
-var _change = _interopRequireDefault(__webpack_require__(/*! ./components/change/change.vue */ 100));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_change.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
 
 /***/ })
