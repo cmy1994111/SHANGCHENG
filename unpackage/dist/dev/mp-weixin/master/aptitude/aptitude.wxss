@@ -1,4 +1,22 @@
 
+.card-1.data-v-3367c6a8{
+	width: 540rpx;
+	height:360rpx;
+	margin:36rpx 0 0 108rpx;
+	background: #F4F4F4;
+}
+.card-2.data-v-3367c6a8{
+	width: 540rpx;
+	height:360rpx;
+	margin:36rpx 0 0 108rpx;
+	background: #F4F4F4;
+}
+.card-3.data-v-3367c6a8{
+	width: 540rpx;
+	height:360rpx;
+	margin:36rpx 0 0 108rpx;
+	background: #F4F4F4;
+}
 .card-text.data-v-3367c6a8 {
 	margin-top: 124rpx;
 	font-size: 30rpx;

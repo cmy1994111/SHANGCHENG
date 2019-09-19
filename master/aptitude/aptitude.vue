@@ -24,12 +24,13 @@
 			<view class="card-text">
 				证件信息
 			</view>
-			<view class="caed-1">
+			<view class="card-1">
 				<van-uploader v-model="fileList" multiple />
 			</view>
-			<view class="caed-2"></view>
-			<view class="caed-3"></view>
+			<view class="card-2"></view>
+			<view class="card-3"></view>
 		</view>
+		<button type="danger" style="background: #1A78DF; color: #fff;margin-top: 100rpx;" @tap="submit">提交信息</button>
 	</view>
 </template>
 
@@ -54,12 +55,36 @@
 			onClickIcon(event) {
 				// event.detail 为当前输入的值
 				console.log(event.detail);
+			},
+			submit(e){
+				console.log(e)
 			}
 		}
 	}
 </script>
 
 <style scoped>
+	.card-1{
+		width: 540rpx;
+		height:360rpx;
+		margin:36rpx 0 0 108rpx;
+		background: #F4F4F4;
+		
+	}
+	.card-2{
+		width: 540rpx;
+		height:360rpx;
+		margin:36rpx 0 0 108rpx;
+		background: #F4F4F4;
+		
+	}
+	.card-3{
+		width: 540rpx;
+		height:360rpx;
+		margin:36rpx 0 0 108rpx;
+		background: #F4F4F4;
+		
+	}
 	.card-text {
 		margin-top: 124rpx;
 		font-size: 30rpx;

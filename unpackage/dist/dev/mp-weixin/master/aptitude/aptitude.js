@@ -147,6 +147,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
 var _default =
 {
   data: function data() {
@@ -168,6 +169,9 @@ var _default =
     onClickIcon: function onClickIcon(event) {
       // event.detail 为当前输入的值
       console.log(event.detail);
+    },
+    submit: function submit(e) {
+      console.log(e);
     } } };exports.default = _default;
 
 /***/ }),
