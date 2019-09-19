@@ -78,8 +78,13 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {}
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+}
 var staticRenderFns = []
+render._withStripped = true
 
 
 
@@ -142,26 +147,6 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 var _default =
 {
   data: function data() {
@@ -170,7 +155,13 @@ var _default =
       phone: "1111",
       shop: "1111",
       city: "1111",
-      Service: "1111" };
+      Service: "1111",
+      fileList: [
+      { url: 'https://img.yzcdn.cn/vant/cat.jpeg' },
+      // Uploader 根据文件后缀来判断是否为图片文件
+      // 如果图片 URL 中不包含类型信息，可以添加 isImage 标记来声明
+      { url: 'https://cloud-image', isImage: true }] };
+
 
   },
   methods: {

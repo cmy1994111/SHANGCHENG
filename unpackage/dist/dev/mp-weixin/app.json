@@ -104,5 +104,6 @@
     "van-collapse": "/wxcomponents/vant/collapse/index",
     "van-collapse-item": "/wxcomponents/vant/collapse-item/index",
     "van-picker": "/wxcomponents/vant/picker/index"
-  }
+  },
+  "sitemapLocation": "sitemap88.json"
 }
