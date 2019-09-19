@@ -1,0 +1,56 @@
+
+.middle.data-v-7792ceaa {
+	border-radius: 25rpx;
+	overflow: hidden;
+}
+.danyuage1 icon.data-v-7792ceaa{
+	color: #007AFF;
+}
+.middle .danyuage1.data-v-7792ceaa {
+	height: 110rpx;
+	border-radius: 25rpx;
+	overflow: hidden;
+}
+.nav.data-v-7792ceaa {
+	width: 750rpx;
+	height: 500rpx;
+	background: url(https://t1.picb.cc/uploads/2019/09/17/gFhVns.png);
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+}
+.nav .nav-left.data-v-7792ceaa {
+	width: 160rpx;
+	height: 160rpx;
+	border-radius: 100%;
+}
+.nav .nav-left image.data-v-7792ceaa {
+	width: 160rpx;
+	height: 160rpx;
+	border-radius: 100%;
+	margin: 195rpx 40rpx 0 30rpx;
+}
+.nav .nav-right.data-v-7792ceaa {
+	margin: 239rpx 0 0 40rpx;
+	width: 158rpx;
+	height: 72rpx;
+	font-size: 52rpx;
+	font-family: PingFangSC;
+	font-weight: 500;
+	color: rgba(255, 255, 255, 1);
+	line-height: 72rpx;
+}
+.middle.data-v-7792ceaa {
+	width: 690rpx;
+	height: 666rpx;
+	background: rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0rpx 5rpx 15rpx 0rpx rgba(238, 238, 238, 1);
+	        box-shadow: 0rpx 5rpx 15rpx 0rpx rgba(238, 238, 238, 1);
+	border-radius: 25rpx;
+	position: absolute;
+	left: 30rpx;
+	top: 418rpx;
+}
+

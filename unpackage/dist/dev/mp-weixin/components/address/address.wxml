@@ -1,0 +1,1 @@
+<view><semp-city vue-id="1" platform="jd" data-event-opts="{{[['^confirm',[['onCityConfirm']]]]}}" bind:confirm="__e" bind:__l="__l"></semp-city></view>
