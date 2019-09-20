@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "uni-rate": "/components/uni-rate/uni-rate",
+    "async-switch": "/components/helang-asyncSwitch/helang-asyncSwitch",
+    "cmd-cell-item": "/components/cmd-cell-item/cmd-cell-item"
+  }
+}

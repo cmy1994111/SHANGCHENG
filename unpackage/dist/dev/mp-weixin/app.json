@@ -1,7 +1,11 @@
 {
   "pages": [
-    "master/aptitude/aptitude",
+    "master/ranking/ranking",
+    "master/myselfs/myselfs",
+    "master/orders/orders",
+    "master/home/home",
     "pages/myself/myself",
+    "master/aptitude/aptitude",
     "components/about/about",
     "components/qidong/qidong",
     "components/appraise/appraise",
@@ -104,6 +108,5 @@
     "van-collapse": "/wxcomponents/vant/collapse/index",
     "van-collapse-item": "/wxcomponents/vant/collapse-item/index",
     "van-picker": "/wxcomponents/vant/picker/index"
-  },
-  "sitemapLocation": "sitemap88.json"
+  }
 }

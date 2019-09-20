@@ -1,9 +1,29 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "master/aptitude/aptitude",
+			"path": "master/ranking/ranking",
 			"style": {
-				"navigationBarTitleText": "资质验证"
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "master/myselfs/myselfs",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+
+		{
+			"path": "master/orders/orders",
+			"style": {
+				"navigationBarTitleText": "订单"
+			}
+		},
+		{
+			"path": "master/home/home",
+			"style": {
+				"navigationStyle": "custom"
+
 			}
 		},
 		{
@@ -13,6 +33,13 @@
 				"navigationStyle": "custom"
 			}
 		},
+		{
+			"path": "master/aptitude/aptitude",
+			"style": {
+				"navigationBarTitleText": "资质验证"
+			}
+		},
+
 		{
 			"path": "components/about/about",
 			"style": {
@@ -118,6 +145,7 @@
 				"navigationBarTitleText": "收货地址"
 			}
 		}
+
 
 	],
 	"globalStyle": {
