@@ -1604,7 +1604,7 @@ function normalizeComponent (
 
 /***/ }),
 
-/***/ 180:
+/***/ 188:
 /*!*******************************************************************************************!*\
   !*** C:/Users/PC/Documents/HBuilderProjects/0916-shop/components/xiujun-evaluate/list.js ***!
   \*******************************************************************************************/
@@ -1677,7 +1677,7 @@ listData;exports.default = _default;
 
 /***/ }),
 
-/***/ 188:
+/***/ 196:
 /*!****************************************************************************!*\
   !*** C:/Users/PC/Documents/HBuilderProjects/0916-shop/common/city.data.js ***!
   \****************************************************************************/
@@ -60199,7 +60199,7 @@ module.exports = {"_from":"@dcloudio/uni-stat@next","_id":"@dcloudio/uni-stat@2.
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "master/myselfs/myselfs": { "navigationStyle": "custom", "usingComponents": { "uni-rate": "/components/uni-rate/uni-rate", "async-switch": "/components/helang-asyncSwitch/helang-asyncSwitch", "cmd-cell-item": "/components/cmd-cell-item/cmd-cell-item" } }, "master/orders/orders": { "navigationBarTitleText": "订单", "usingComponents": {} }, "master/home/home": { "navigationStyle": "custom", "usingComponents": {} }, "pages/myself/myself": { "navigationBarTitleText": "", "navigationStyle": "custom", "usingComponents": {} }, "master/aptitude/aptitude": { "navigationBarTitleText": "资质验证", "usingComponents": {} }, "components/about/about": { "navigationBarTitleText": "关于我们", "usingComponents": {} }, "components/qidong/qidong": { "navigationStyle": "custom", "usingComponents": {} }, "components/appraise/appraise": { "navigationBarTitleText": "评价", "usingComponents": { "sunui-star": "/components/sunui-star/sunui-star" } }, "pages/order/order": { "navigationBarTitleText": "我的订单", "usingComponents": {} }, "components/cart/cart": { "navigationBarTitleText": "购物车", "usingComponents": {} }, "components/detail/detail": { "navigationBarTitleText": "订单详情", "usingComponents": { "uni-evaluate": "/components/xiujun-evaluate/uni-evaluate" } }, "components/coupon/coupon": { "navigationBarTitleText": "我的优惠卷", "usingComponents": {} }, "components/collection/collection": { "navigationBarTitleText": "我的收藏", "usingComponents": {} }, "pages/index/index": { "navigationBarTitleText": "家电清洁", "usingComponents": {} }, "pages/shop/shop": { "navigationBarTitleText": "商城", "usingComponents": {} }, "components/change/change": { "navigationBarTitleText": "切换身份", "usingComponents": {} }, "components/address/address": { "navigationBarTitleText": "收货地址", "usingComponents": { "semp-city": "/components/semp-city/semp-city" } }, "master/ranking/ranking": { "navigationStyle": "custom", "usingComponents": {} } }, "globalStyle": { "navigationBarTitleText": "Vant For Uni-app", "navigationBarBackgroundColor": "#f8f8f8", "navigationBarTextStyle": "black", "backgroundTextStyle": "dark", "backgroundColor": "#f8f8f8" } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "master/myselfs/myselfs": { "navigationStyle": "custom" }, "master/ranking/ranking": { "navigationStyle": "custom" }, "master/orders/orders": { "navigationBarTitleText": "订单" }, "master/home/home": { "navigationStyle": "custom" }, "pages/myself/myself": { "navigationBarTitleText": "", "navigationStyle": "custom" }, "master/aptitude/aptitude": { "navigationBarTitleText": "资质验证" }, "components/about/about": { "navigationBarTitleText": "关于我们" }, "components/qidong/qidong": { "navigationStyle": "custom" }, "components/appraise/appraise": { "navigationBarTitleText": "评价" }, "pages/order/order": { "navigationBarTitleText": "我的订单" }, "components/cart/cart": { "navigationBarTitleText": "购物车" }, "components/detail/detail": { "navigationBarTitleText": "订单详情" }, "components/coupon/coupon": { "navigationBarTitleText": "我的优惠卷" }, "components/collection/collection": { "navigationBarTitleText": "我的收藏" }, "pages/index/index": { "navigationBarTitleText": "家电清洁" }, "pages/shop/shop": { "navigationBarTitleText": "商城" }, "components/change/change": { "navigationBarTitleText": "切换身份" }, "components/address/address": { "navigationBarTitleText": "收货地址" } }, "globalStyle": { "navigationBarTitleText": "Vant For Uni-app", "navigationBarBackgroundColor": "#f8f8f8", "navigationBarTextStyle": "black", "backgroundTextStyle": "dark", "backgroundColor": "#f8f8f8" } };exports.default = _default;
 
 /***/ }),
 

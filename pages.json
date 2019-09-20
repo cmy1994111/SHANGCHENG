@@ -1,17 +1,18 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "master/ranking/ranking",
-			"style": {
-				"navigationStyle": "custom"
-			}
-		},
-		{
 			"path": "master/myselfs/myselfs",
 			"style": {
 				"navigationStyle": "custom"
 			}
 		},
+		{
+			"path": "master/ranking/ranking",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+
 
 		{
 			"path": "master/orders/orders",

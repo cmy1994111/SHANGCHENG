@@ -1,7 +1,7 @@
 {
   "pages": [
-    "master/ranking/ranking",
     "master/myselfs/myselfs",
+    "master/ranking/ranking",
     "master/orders/orders",
     "master/home/home",
     "pages/myself/myself",
