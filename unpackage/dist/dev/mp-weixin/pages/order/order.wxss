@@ -249,12 +249,12 @@
 	overflow: hidden;
 }
 .nav .nav-text-1{
-		border-bottom: 4rpx solid #1A78DFFF;
-		color: #1A78DFFF;
+		/* border-bottom: 4rpx solid #1A78DFFF; */
+		/* color: #1A78DFFF; */
 }
 .nav text:hover{
-	border-bottom: 4rpx solid #1A78DFFF;
-	color:#1A78DFFF;
+	/* border-bottom: 4rpx solid #1A78DFFF; */
+	/* color:#1A78DFFF; */
 }
 .middle .middle-1{
 	width: 690rpx;

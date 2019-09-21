@@ -1,10 +1,12 @@
 {
   "pages": [
-    "master/ordersDetail/ordersDetail",
-    "pages/order/order",
+    "master/account/account",
+    "master/evaluates/evaluates",
     "master/myselfs/myselfs",
-    "master/ranking/ranking",
     "master/orders/orders",
+    "pages/order/order",
+    "master/ordersDetail/ordersDetail",
+    "master/ranking/ranking",
     "master/home/home",
     "pages/myself/myself",
     "master/aptitude/aptitude",
@@ -19,7 +21,8 @@
     "pages/shop/shop",
     "components/change/change",
     "components/address/address",
-    "master/abouts/abouts"
+    "master/abouts/abouts",
+    "master/masterdetail/masterdetail"
   ],
   "subPackages": [],
   "window": {

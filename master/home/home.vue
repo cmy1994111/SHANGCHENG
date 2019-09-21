@@ -66,7 +66,7 @@
 			</view>
 		</view>
 		<view class="orders">
-			<view class="orders-top">我的派单</view>
+			<view class="orders-top">我的接单</view>
 			<view class="order-middle">
 				<view class="order-middle-1">
 					<text style="font-size:24rpx;color: #666666;">订单编号:&nbsp;{{reference}}</text>
@@ -101,7 +101,7 @@
 				</view>
 					<view class="order-middle-7">
 						<button style="width:160rpx;height:60rpx;font-size:26rpx;color: #999999;border-radius: 30rpx;text-align: center;line-height: 60rpx;margin-left: 350rpx;">拒接</button>
-						<button style="width: 160rpx;height:60rpx;font-size:26rpx;color: #999999;border-radius: 30rpx;text-align: center;line-height: 60rpx;">查看详情</button>
+						<button style="width: 160rpx;height:60rpx;font-size:26rpx;color: #999999;border-radius: 30rpx;text-align: center;line-height: 60rpx;" @tap="ToDetail">查看详情</button>
 					</view>
 			</view>
 		</view>
@@ -131,6 +131,11 @@
 			};
 		},
 		methods: {
+			ToDetail(){
+				uni.navigateTo({
+					url:"../ordersDetail/ordersDetail"
+				})
+			},
 			onTabChange(e) {
 				console.log(e.detail)
 				console.log(111)
@@ -151,6 +156,9 @@
 </script>
 
 <style lang="scss" scoped>
+	.orders{
+		height: 800rpx;
+	}
 	.order-middle-7 {
 		display: flex;
 		width: 690rpx;

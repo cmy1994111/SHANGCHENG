@@ -7567,7 +7567,7 @@ internalMixin(Vue);
 
 /***/ }),
 
-/***/ 204:
+/***/ 258:
 /*!*******************************************************************************************!*\
   !*** C:/Users/PC/Documents/HBuilderProjects/0916-shop/components/xiujun-evaluate/list.js ***!
   \*******************************************************************************************/
@@ -7640,7 +7640,7 @@ listData;exports.default = _default;
 
 /***/ }),
 
-/***/ 212:
+/***/ 266:
 /*!****************************************************************************!*\
   !*** C:/Users/PC/Documents/HBuilderProjects/0916-shop/common/city.data.js ***!
   \****************************************************************************/
@@ -60144,6 +60144,14 @@ var lifecycle = {
   },
   onLoad: function onLoad(options) {
     stat.load(options, this);
+    // 重写分享，获取分享上报事件
+    if (this.$scope && this.$scope.onShareAppMessage) {
+      var oldShareAppMessage = this.$scope.onShareAppMessage;
+      this.$scope.onShareAppMessage = function (options) {
+        stat.interceptShare(false);
+        return oldShareAppMessage.call(this, options);
+      };
+    }
   },
   onShow: function onShow() {
     isHide = false;
@@ -60162,9 +60170,6 @@ var lifecycle = {
   },
   onError: function onError(e) {
     stat.error(e);
-  },
-  onShareAppMessage: function onShareAppMessage() {
-    stat.interceptShare(false);
   } };
 
 
@@ -60187,7 +60192,7 @@ main();
 /*! exports provided: _from, _id, _inBundle, _integrity, _location, _phantomChildren, _requested, _requiredBy, _resolved, _shasum, _spec, _where, author, bugs, bundleDependencies, deprecated, description, devDependencies, files, gitHead, homepage, license, main, name, repository, scripts, version, default */
 /***/ (function(module) {
 
-module.exports = {"_from":"@dcloudio/uni-stat@next","_id":"@dcloudio/uni-stat@2.0.0-23020190918001","_inBundle":false,"_integrity":"sha512-AaOozCo3kxnm2idouHUR/lfYjZlRtD9Ve29fIrkZJUZh7R9CfJJFKZDWJUW3rRbyUq2OiPisz5KargPCsIqsAg==","_location":"/@dcloudio/uni-stat","_phantomChildren":{},"_requested":{"type":"tag","registry":true,"raw":"@dcloudio/uni-stat@next","name":"@dcloudio/uni-stat","escapedName":"@dcloudio%2funi-stat","scope":"@dcloudio","rawSpec":"next","saveSpec":null,"fetchSpec":"next"},"_requiredBy":["#USER","/","/@dcloudio/vue-cli-plugin-uni"],"_resolved":"https://registry.npmjs.org/@dcloudio/uni-stat/-/uni-stat-2.0.0-23020190918001.tgz","_shasum":"4b2941c29eb674a60ea8eff04a9f13b2df28c0e1","_spec":"@dcloudio/uni-stat@next","_where":"/Users/fxy/Documents/DCloud/HbuilderX-plugins/release/uniapp-cli","author":"","bugs":{"url":"https://github.com/dcloudio/uni-app/issues"},"bundleDependencies":false,"deprecated":false,"description":"","devDependencies":{"@babel/core":"^7.5.5","@babel/preset-env":"^7.5.5","eslint":"^6.1.0","rollup":"^1.19.3","rollup-plugin-babel":"^4.3.3","rollup-plugin-clear":"^2.0.7","rollup-plugin-commonjs":"^10.0.2","rollup-plugin-copy":"^3.1.0","rollup-plugin-eslint":"^7.0.0","rollup-plugin-json":"^4.0.0","rollup-plugin-node-resolve":"^5.2.0","rollup-plugin-replace":"^2.2.0","rollup-plugin-uglify":"^6.0.2"},"files":["dist","package.json","LICENSE"],"gitHead":"0fac47b62d100213ce48c29dd9d0a335f8a00264","homepage":"https://github.com/dcloudio/uni-app#readme","license":"Apache-2.0","main":"dist/index.js","name":"@dcloudio/uni-stat","repository":{"type":"git","url":"git+https://github.com/dcloudio/uni-app.git","directory":"packages/uni-stat"},"scripts":{"build":"NODE_ENV=production rollup -c rollup.config.js","dev":"NODE_ENV=development rollup -w -c rollup.config.js"},"version":"2.0.0-23020190918001"};
+module.exports = {"_from":"@dcloudio/uni-stat@next","_id":"@dcloudio/uni-stat@2.0.0-23120190920002","_inBundle":false,"_integrity":"sha512-hrLnv6LP3LQAJGCXifaa+zaSAMDIn8aLwz9BvSL66lrwWJ5GAIF2dph+EnjrK3fTOccxO3Vsd4o+PywHqjuyTg==","_location":"/@dcloudio/uni-stat","_phantomChildren":{},"_requested":{"type":"tag","registry":true,"raw":"@dcloudio/uni-stat@next","name":"@dcloudio/uni-stat","escapedName":"@dcloudio%2funi-stat","scope":"@dcloudio","rawSpec":"next","saveSpec":null,"fetchSpec":"next"},"_requiredBy":["#USER","/","/@dcloudio/vue-cli-plugin-uni"],"_resolved":"https://registry.npmjs.org/@dcloudio/uni-stat/-/uni-stat-2.0.0-23120190920002.tgz","_shasum":"61c805306212882e567f01978c0ed880169c185f","_spec":"@dcloudio/uni-stat@next","_where":"/Users/fxy/Documents/DCloud/HbuilderX-plugins/release/uniapp-cli","author":"","bugs":{"url":"https://github.com/dcloudio/uni-app/issues"},"bundleDependencies":false,"deprecated":false,"description":"","devDependencies":{"@babel/core":"^7.5.5","@babel/preset-env":"^7.5.5","eslint":"^6.1.0","rollup":"^1.19.3","rollup-plugin-babel":"^4.3.3","rollup-plugin-clear":"^2.0.7","rollup-plugin-commonjs":"^10.0.2","rollup-plugin-copy":"^3.1.0","rollup-plugin-eslint":"^7.0.0","rollup-plugin-json":"^4.0.0","rollup-plugin-node-resolve":"^5.2.0","rollup-plugin-replace":"^2.2.0","rollup-plugin-uglify":"^6.0.2"},"files":["dist","package.json","LICENSE"],"gitHead":"a9dfc1e2b7a5608e010228c06a040b8f267aace2","homepage":"https://github.com/dcloudio/uni-app#readme","license":"Apache-2.0","main":"dist/index.js","name":"@dcloudio/uni-stat","repository":{"type":"git","url":"git+https://github.com/dcloudio/uni-app.git","directory":"packages/uni-stat"},"scripts":{"build":"NODE_ENV=production rollup -c rollup.config.js","dev":"NODE_ENV=development rollup -w -c rollup.config.js"},"version":"2.0.0-23120190920002"};
 
 /***/ }),
 
@@ -60199,7 +60204,7 @@ module.exports = {"_from":"@dcloudio/uni-stat@next","_id":"@dcloudio/uni-stat@2.
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "master/ordersDetail/ordersDetail": { "navigationBarTitleText": "订单详情", "navigationBarTextStyle": "white", "navigationBarBackgroundColor": "#1A78DF" }, "pages/order/order": { "navigationBarTitleText": "我的订单" }, "master/myselfs/myselfs": { "navigationStyle": "custom" }, "master/ranking/ranking": { "navigationStyle": "custom" }, "master/orders/orders": { "navigationBarTitleText": "订单" }, "master/home/home": { "navigationStyle": "custom" }, "pages/myself/myself": { "navigationBarTitleText": "", "navigationStyle": "custom" }, "master/aptitude/aptitude": { "navigationBarTitleText": "资质验证" }, "components/about/about": { "navigationBarTitleText": "关于我们" }, "components/qidong/qidong": { "navigationStyle": "custom" }, "components/appraise/appraise": { "navigationBarTitleText": "评价" }, "components/cart/cart": { "navigationBarTitleText": "购物车" }, "components/detail/detail": { "navigationBarTitleText": "订单详情" }, "components/coupon/coupon": { "navigationBarTitleText": "我的优惠卷" }, "components/collection/collection": { "navigationBarTitleText": "我的收藏" }, "pages/index/index": { "navigationBarTitleText": "家电清洁" }, "pages/shop/shop": { "navigationBarTitleText": "商城" }, "components/change/change": { "navigationBarTitleText": "申请成为师傅" }, "components/address/address": { "navigationBarTitleText": "收货地址" }, "master/abouts/abouts": { "navigationBarTitleText": "关于我们", "navigationBarTextStyle": "white", "navigationBarBackgroundColor": "#1A78DF" } }, "globalStyle": { "navigationBarTitleText": "Vant For Uni-app", "navigationBarBackgroundColor": "#f8f8f8", "navigationBarTextStyle": "black", "backgroundTextStyle": "dark", "backgroundColor": "#f8f8f8" } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "master/evaluates/evaluates": { "navigationBarTitleText": "评价管理", "usingComponents": { "all-comment": "/components/allcomment/allcomment", "good-comment": "/components/goodscomment/goodscomment", "middle-comment": "/components/middlecomment/middlecomment", "bad-comment": "/components/badcomment/badcomment" } }, "master/myselfs/myselfs": { "navigationStyle": "custom", "usingComponents": { "uni-rate": "/components/uni-rate/uni-rate", "async-switch": "/components/helang-asyncSwitch/helang-asyncSwitch", "cmd-cell-item": "/components/cmd-cell-item/cmd-cell-item" } }, "master/orders/orders": { "navigationBarTitleText": "订单", "usingComponents": { "orders-all": "/components/order-sall/order-sall", "obligation": "/components/obligation-pay/obligation-pay", "ser-viera": "/components/obligation-servie/obligation-servie", "accomplish": "/components/orderaccomplish/orderaccomplish" } }, "pages/order/order": { "navigationBarTitleText": "我的订单", "usingComponents": {} }, "master/ordersDetail/ordersDetail": { "navigationBarTitleText": "订单详情", "navigationBarTextStyle": "white", "navigationBarBackgroundColor": "#1A78DF", "usingComponents": {} }, "master/ranking/ranking": { "navigationStyle": "custom", "usingComponents": {} }, "master/home/home": { "navigationStyle": "custom", "usingComponents": {} }, "pages/myself/myself": { "navigationBarTitleText": "", "navigationStyle": "custom", "usingComponents": {} }, "master/aptitude/aptitude": { "navigationBarTitleText": "资质验证", "usingComponents": {} }, "components/about/about": { "navigationBarTitleText": "关于我们", "usingComponents": {} }, "components/qidong/qidong": { "navigationStyle": "custom", "usingComponents": {} }, "components/appraise/appraise": { "navigationBarTitleText": "评价", "usingComponents": { "sunui-star": "/components/sunui-star/sunui-star" } }, "components/cart/cart": { "navigationBarTitleText": "购物车", "usingComponents": {} }, "components/detail/detail": { "navigationBarTitleText": "订单详情", "usingComponents": { "uni-evaluate": "/components/xiujun-evaluate/uni-evaluate" } }, "components/coupon/coupon": { "navigationBarTitleText": "我的优惠卷", "usingComponents": {} }, "components/collection/collection": { "navigationBarTitleText": "我的收藏", "usingComponents": {} }, "pages/index/index": { "navigationBarTitleText": "家电清洁", "usingComponents": {} }, "pages/shop/shop": { "navigationBarTitleText": "商城", "usingComponents": {} }, "components/change/change": { "navigationBarTitleText": "申请成为师傅", "usingComponents": {} }, "components/address/address": { "navigationBarTitleText": "收货地址", "usingComponents": { "semp-city": "/components/semp-city/semp-city" } }, "master/abouts/abouts": { "navigationBarTitleText": "关于我们", "navigationBarTextStyle": "white", "navigationBarBackgroundColor": "#1A78DF", "usingComponents": {} }, "master/masterdetail/masterdetail": { "navigationBarTitleText": "订单详情", "navigationBarBackgroundColor": "#1A78DF", "usingComponents": {} }, "master/account/account": { "navigationBarTitleText": "账户明细", "navigationBarTextStyle": "white", "navigationBarBackgroundColor": "#1A78DF", "usingComponents": {} } }, "globalStyle": { "navigationBarTitleText": "Vant For Uni-app", "navigationBarBackgroundColor": "#f8f8f8", "navigationBarTextStyle": "black", "backgroundTextStyle": "dark", "backgroundColor": "#f8f8f8" } };exports.default = _default;
 
 /***/ }),
 

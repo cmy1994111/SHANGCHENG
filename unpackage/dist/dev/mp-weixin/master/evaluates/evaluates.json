@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "评价管理",
+  "usingComponents": {
+    "all-comment": "/components/allcomment/allcomment",
+    "good-comment": "/components/goodscomment/goodscomment",
+    "middle-comment": "/components/middlecomment/middlecomment",
+    "bad-comment": "/components/badcomment/badcomment"
+  }
+}

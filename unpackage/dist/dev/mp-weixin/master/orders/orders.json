@@ -1,4 +1,9 @@
 {
   "navigationBarTitleText": "订单",
-  "usingComponents": {}
+  "usingComponents": {
+    "orders-all": "/components/order-sall/order-sall",
+    "obligation": "/components/obligation-pay/obligation-pay",
+    "ser-viera": "/components/obligation-servie/obligation-servie",
+    "accomplish": "/components/orderaccomplish/orderaccomplish"
+  }
 }

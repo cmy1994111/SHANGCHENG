@@ -1,0 +1,35 @@
+
+.nav{
+	width:690rpx;
+	height: 72rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+	font-size:28rpx ;
+	color:#333333 ;
+}
+.middle{
+	width: 750rpx;
+	height: 140rpx;
+	border-bottom: 1rpx solid #DEDEDE;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	background: #FFFFFF;
+}
+

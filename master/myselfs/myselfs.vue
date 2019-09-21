@@ -5,9 +5,6 @@
 			<van-tabbar-item icon="orders-o" @tap="ToChange">订单</van-tabbar-item>
 			<van-tabbar-item icon="manager-o" @tap="ToMyself">我的</van-tabbar-item>
 		</van-tabbar>
-		
-		
-		
 		<view class="nav">
 			<view class="nav-left">
 				<image src="../../static/日用家居.png"></image>
