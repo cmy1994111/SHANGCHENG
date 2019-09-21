@@ -1,6 +1,20 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "master/ordersDetail/ordersDetail",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#1A78DF"
+			}
+		},
+		{
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "我的订单"
+			}
+		},
+		{
 			"path": "master/myselfs/myselfs",
 			"style": {
 				"navigationStyle": "custom"
@@ -57,12 +71,6 @@
 			"path": "components/appraise/appraise",
 			"style": {
 				"navigationBarTitleText": "评价"
-			}
-		},
-		{
-			"path": "pages/order/order",
-			"style": {
-				"navigationBarTitleText": "我的订单"
 			}
 		},
 
@@ -131,7 +139,7 @@
 		, {
 			"path": "components/change/change",
 			"style": {
-				"navigationBarTitleText": "切换身份"
+				"navigationBarTitleText": "申请成为师傅"
 			}
 		}
 		//      ,{
@@ -148,6 +156,14 @@
 		}
 
 
+		, {
+			"path": "master/abouts/abouts",
+			"style": {
+				"navigationBarTitleText": "关于我们",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#1A78DF"
+			}
+		}
 	],
 	"globalStyle": {
 		"navigationBarTitleText": "Vant For Uni-app",

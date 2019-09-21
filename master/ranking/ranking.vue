@@ -122,11 +122,11 @@
 				name:"张大炮"
 			};
 		},
-		method:{
+		methods:{
 			 onClickLeft() {
-			    wx.navigateBack({
-					delta: 1
-				});
+			   uni.navigateTo({
+			   	url:"../myselfs/myselfs"
+			   })
 			  }
 		}
 	}

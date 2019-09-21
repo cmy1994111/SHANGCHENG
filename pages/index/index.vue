@@ -50,7 +50,7 @@
 		<swiper class="swiper" :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval" :duration="duration">
 			<swiper-item>
 				<view class="swiper-item uni-bg-red">
-					<image src="../../static/banner-首页.png"></image>
+					<image src="../../static/banner-首页.png" @tap="ToChange"></image>
 				</view>
 			</swiper-item>
 			<swiper-item>
@@ -78,6 +78,11 @@
 				uni.navigateTo({
 					url: '../../components/detail/detail'
 				});
+			},
+			ToChange(){
+				uni.navigateTo({
+					url:'../../components/change/change'
+				})
 			}
 		}
 	}

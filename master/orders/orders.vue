@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<van-tabs active="{{ active }}" bind:change="onChange" active-color="#333" color="#4B80FB">
+		<van-tabs :active="active" v-bind:change="onChange" active-color="#333" color="#4B80FB">
 		  <van-tab title="全部">全部</van-tab>
 		  <van-tab title="待付款">待付款</van-tab>
 		  <van-tab title="待服务">待服务</van-tab>

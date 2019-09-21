@@ -1,7 +1,6 @@
 <template>
 	<view>
-		
-		<van-tabbar :active="active" active-color="#477DFC" inactive-color="#000" v-on:change="onTabChange">
+		<van-tabbar :active="active" active-color="#477DFC" inactive-color="#000" v-bind:change="onTabChange">
 			<van-tabbar-item icon="home-o" @tap="ToHome">首页</van-tabbar-item>
 			<van-tabbar-item icon="orders-o" @tap="ToChange">订单</van-tabbar-item>
 			<van-tabbar-item icon="manager-o" @tap="ToMyself">我的</van-tabbar-item>
@@ -27,10 +26,10 @@
 		<view class="middle">
 			<cmd-cell-item title="我的状态"  addon="开工" show-switch  @switch="fnClick" switch-color="#2f86f6" />
 			<cmd-cell-item title="排行榜"  arrow @click="ToRanking"  />
-			<cmd-cell-item title="订单记录"  arrow />
-			<cmd-cell-item title="订单记录"  arrow />
-			<cmd-cell-item title="关于我们"  arrow />
-			<cmd-cell-item title="意见反馈"  arrow />
+			<cmd-cell-item title="订单记录"  arrow @click="OrderHistory" />
+			<cmd-cell-item title="关于我们"  arrow @click="ToAbouts"/>
+			<cmd-cell-item title="意见反馈"  arrow @click="ToOpinion"/>
+			<cmd-cell-item title="切换身份"  arrow @click='ToCard' />
 		</view>
 	</view>
 </template>
@@ -61,6 +60,11 @@
 				console.log(111)
 				this.active = e.detail
 			},
+			ToAbouts(){
+				uni.navigateTo({
+					url:"../abouts/abouts"
+				})
+			},
 			ToChange(){
 				uni.navigateTo({
 					url:"../orders/orders"
@@ -79,6 +83,11 @@
 			ToRanking(){
 				uni.navigateTo({
 					url:"../ranking/ranking"
+				})
+			},
+			ToCard(){
+				uni.navigateTo({
+					url:"../../components/qidong/qidong"
 				})
 			}
 			

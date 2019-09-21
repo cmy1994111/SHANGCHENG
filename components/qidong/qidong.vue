@@ -1,16 +1,16 @@
 <template>
 	<view>
-		<view class="nav-text">
+		<view class="nav-text" >
 			<text style="font-size: 60rpx;color:rgba(51,51,51,1);font-weight:500;font-family:PingFang SC;">选择自己的身份</text>
 			<text style="font-size: 26rpx; color:rgba(102,102,102,1);font-family:PingFang SC;font-weight:500;">开启属于自己的生活之旅</text>
 		</view>
 		<view class="nav-img">
-			<view class="nav-img-left">
+			<view class="nav-img-left" @click="User">
 				<view class="yonghu-img" style="width: 180rpx;height: 180rpx;border-radius: 50%;">
 					<image src="../../static/yonghu.png" style="width: 180rpx;height: 180rpx;border-radius: 100%;margin-top:35rpx"></image>
 				</view>
 			</view>
-			<view class="nav-img-right">
+			<view class="nav-img-right" @click="ToMaster">
 				<view class="shifu-img">
 					<view class="yonghu-img" style="width: 180rpx;height: 180rpx;border-radius: 50%;">
 						<image src="../../static/shifu.png" style="width: 180rpx;height: 180rpx;border-radius: 100%;margin:20rpx"></image>
@@ -36,7 +36,16 @@
 			}
 		},
 		methods: {
-			
+			ToMaster(){
+				uni.navigateTo({
+					url:"../../master/home/home"
+				})
+			},
+			User(){
+				uni.switchTab({
+					url:"../../pages/index/index"
+				})
+			}
 		}
 	}
 </script>

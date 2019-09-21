@@ -12,7 +12,7 @@
 			<van-cell icon="location-o" is-link title="我的收货地址" link-type="navigateTo" url="/components/address/address" />
 			<van-cell title-class icon="question-o" title="联系电话" value="13526443969" />
 			<van-cell icon="info-o" is-link title="关于我们" link-type="navigateTo" url="/components/about/about" />
-			<van-cell icon="exchange" is-link title="切换身份" link-type="navigateTo" url="/components/change/change" />
+			<van-cell icon="exchange" is-link title="切换身份" @tap="ToChange" />
 		</view>
 	</view>
 </template>
@@ -25,7 +25,11 @@
 			}
 		},
 		methods: {
-
+			ToChange(){
+				uni.navigateTo({
+					url:"../../components/qidong/qidong"
+				})
+			}
 		}
 	}
 </script>
