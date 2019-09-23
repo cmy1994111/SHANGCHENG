@@ -244,7 +244,7 @@
 	}
 
 	.middle-flex-1 .middle-left-1 .middle-left-text-middle-1 {
-		width: 156rpx;
+		width: 200rpx;
 		height: 37rpx;
 		font-size: 26rpx;
 		font-family: PingFangSC;
@@ -268,13 +268,10 @@
 	.middle-flex-1 .middle-right-1 .middle-right-text-top-1 {}
 
 	.middle-flex-1 .middle-right-1 .middle-right-text-top-2 {
-		width: 158rpx;
-		height: 90rpx;
 		font-size: 32rpx;
 		font-family: PingFangSC;
 		font-weight: 400;
 		color: rgba(51, 51, 51, 1);
-		line-height: 45rpx;
 	}
 
 	.middle-flex-1 .middle-right-1 .middle-right-text-top-3 {
@@ -282,11 +279,11 @@
 	}
 
 	.middle-flex-1 .middle-number {
-		font-size: 26px;
+		font-size: 44rpx;
 		font-family: PingFangSC;
 		font-weight: 400;
 		color: rgba(102, 102, 102, 1);
-		line-height: 37px;
+		line-height: 37rpx;
 	}
 	.swiper{
 		width: 692rpx;

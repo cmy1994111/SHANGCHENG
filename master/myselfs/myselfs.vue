@@ -9,7 +9,7 @@
 			<view class="nav-left">
 				<image src="../../static/日用家居.png"></image>
 			</view>
-			<view class="nav-right">{{name}}
+			<view class="nav-right" @tap="ToRegister">{{name}}
 				<uni-rate size="18" disabled="true" :value="num"></uni-rate>
 			</view>
 			<view style="width:204rpx; margin:170rpx 0 0 146rpx;display: flex;height:86rpx;flex-direction: column;align-items: flex-end ;">
@@ -17,7 +17,7 @@
 					<text style="font-size: 28rpx;color: #FFFFFF;">￥</text>
 					<text style="font-size: 60rpx;color: #FFFFFF;">{{money}}</text>
 				</view>
-				<text style="font-size:26rpx;color: #FFFFFF;">提现</text>
+				<text style="font-size:26rpx;color: #FFFFFF;" @tap="ToGetMyMoney">提现</text>
 			</view>
 		</view>
 		<view class="middle">
@@ -52,10 +52,20 @@
 		},
 
 		methods: {
+			ToRegister(){
+				uni.navigateTo({
+					url:"../register/register"
+				})
+			},
 			onTabChange(e) {
 				console.log(e.detail)
 				console.log(111)
 				this.active = e.detail
+			},
+			ToGetMyMoney(){
+				uni.navigateTo({
+					url:"../mymoney/mymoney"
+				})
 			},
 			ToAbouts(){
 				uni.navigateTo({

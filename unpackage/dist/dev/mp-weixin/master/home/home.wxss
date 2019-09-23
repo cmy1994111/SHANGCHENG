@@ -24,9 +24,6 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.orders.data-v-cd692c68 {
-  height: 800rpx;
-}
 .order-middle-7.data-v-cd692c68 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -99,7 +96,7 @@
   width: 690rpx;
   height: 530rpx;
   border-radius: 25rpx;
-  margin-top: 23rpx;
+  margin-top: 25rpx;
   margin-left: 30rpx;
   background: #FFFFFF;
 }

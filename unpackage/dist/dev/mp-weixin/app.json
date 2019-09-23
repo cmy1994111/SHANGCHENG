@@ -1,13 +1,18 @@
 {
   "pages": [
+    "master/register/register",
+    "master/myselfs/myselfs",
+    "master/home/home",
+    "master/mymoney/mymoney",
+    "master/withdrawmoney/withdrawmoney",
+    "master/SystemInform/SystemInform",
+    "master/inform/inform",
     "master/account/account",
     "master/evaluates/evaluates",
-    "master/myselfs/myselfs",
     "master/orders/orders",
     "pages/order/order",
     "master/ordersDetail/ordersDetail",
     "master/ranking/ranking",
-    "master/home/home",
     "pages/myself/myself",
     "master/aptitude/aptitude",
     "components/about/about",
@@ -22,7 +27,9 @@
     "components/change/change",
     "components/address/address",
     "master/abouts/abouts",
-    "master/masterdetail/masterdetail"
+    "master/masterdetail/masterdetail",
+    "master/login/login",
+    "master/resetpasswd/resetpasswd"
   ],
   "subPackages": [],
   "window": {

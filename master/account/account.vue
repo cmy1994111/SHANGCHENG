@@ -1,16 +1,16 @@
 <template>
 	<view style="background: #F5F5F5;">
 		<view class="nav">
-			<view >本月<image src="../../static/master/1569060684(1).png" style="width: 30rpx;height: 18rpx;"></image></view>
+			<view >本月<image src="../../static/master/1569060684(1).png" style="width: 30rpx;height: 18rpx;" ></image></view>
 		</view>
-		<view class="middle">
-			<view style="width: 687rpx;">
-				<text style="font-size:26rpx;color: #666666;">订单编号:{{ordersnumber}}</text>
+		<view class="middle" v-for="(item , index) in orders" :key="index">
+			<view style="width: 687rpx;margin-left: 20rpx;display: flex;justify-content:space-between ;">
+				<text style="font-size:26rpx;color: #666666;">订单编号:{{item.name}}</text>
 				<text style="font-size:26rpx;color: #999;">{{paystyle}}</text>
 			</view>
-			<view>
+			<view style="width: 687rpx;margin-left: 20rpx;display: flex;justify-content:space-between ;" >
 				<text style="font-size: 26rpx;color: #999999;">订单时间:{{ordertimeyear}}&nbsp;{{ordertime}}</text>
-				<text style="font-size: ;">￥{{money}}</text>
+				<text style="font-size:28rpx ;color: #4B80FB;">￥{{money}}</text>
 			</view>
 		</view>
 	</view>
@@ -24,7 +24,8 @@
 				paystyle:"微信支付",
 				ordertimeyear:"2019.09.21",
 				ordertime:"10:25:30",
-				money:"20000"
+				money:"20000",
+				orders:[{name:11111111},{name:22222222},{name:333333333}]
 			}
 		},
 		methods: {
@@ -50,5 +51,6 @@
 		display: flex;
 		flex-direction: column;
 		background: #FFFFFF;
+		justify-content: space-around;
 	}
 </style>

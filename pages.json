@@ -1,6 +1,57 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "master/register/register",
+			"style": {
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "master/myselfs/myselfs",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "master/home/home",
+			"style": {
+				"navigationStyle": "custom"
+
+			}
+		},
+		{
+			"path": "master/mymoney/mymoney",
+			"style": {
+				"navigationBarTitleText": "我的钱包",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#1A78DF"
+			}
+		},
+		{
+			"path": "master/withdrawmoney/withdrawmoney",
+			"style": {
+				"navigationBarTitleText": "提现",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#1A78DF"
+			}
+		},
+		{
+			"path": "master/SystemInform/SystemInform",
+			"style": {
+				"navigationBarTitleText": "系统通知",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#1A78DF"
+			}
+		},
+		{
+			"path": "master/inform/inform",
+			"style": {
+				"navigationBarBackgroundColor": "#1A78DF",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "通知消息"
+			}
+		},
+		{
 			"path": "master/account/account",
 			"style": {
 				"navigationBarTitleText": "账户明细",
@@ -14,13 +65,6 @@
 				"navigationBarTitleText": "评价管理"
 			}
 		},
-		{
-			"path": "master/myselfs/myselfs",
-			"style": {
-				"navigationStyle": "custom"
-			}
-		},
-
 		{
 			"path": "master/orders/orders",
 			"style": {
@@ -46,14 +90,6 @@
 			"path": "master/ranking/ranking",
 			"style": {
 				"navigationStyle": "custom"
-			}
-		},
-
-		{
-			"path": "master/home/home",
-			"style": {
-				"navigationStyle": "custom"
-
 			}
 		},
 		{
@@ -186,9 +222,20 @@
 				"navigationBarTitleText": "订单详情",
 				"navigationBarBackgroundColor": "#1A78DF"
 			}
+		},
+		{
+			"path": "master/login/login",
+			"style": {
+				"navigationStyle":"custom"
+			}
 		}
-
-	],
+	    ,{
+            "path" : "master/resetpasswd/resetpasswd",
+            "style": {
+            	"navigationStyle":"custom"
+            }
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTitleText": "Vant For Uni-app",
 		"navigationBarBackgroundColor": "#f8f8f8",

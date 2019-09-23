@@ -31,5 +31,8 @@
 	    -ms-flex-direction: column;
 	        flex-direction: column;
 	background: #FFFFFF;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
 }
 

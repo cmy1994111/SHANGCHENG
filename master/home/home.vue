@@ -15,13 +15,13 @@
 		<view>
 			<view class="nav">
 				<view class="nav-top">
-					<view class="nav-top-left">
-						<view style="width: 129rpx;height: 46rpx;display: flex;justify-content: space-around;background: #0FAEFF;align-items: center;">
+					<view class="nav-top-left" style="margin-top: 150rpx;">
+						<view style="width: 129rpx;height: 46rpx;display: flex;justify-content: space-around;background: #0FAEFF;align-items: center;border-radius:25rpx">
 							<image src="../../static/位置-商城.png" style="width: 26rpx;height: 32rpx;"></image>
 							<text style="font-size: 28rpx;color: #FFFFFF;">{{adress}}</text>
 						</view>
 						<view>
-							<image src="../../static/关于我们.png" style="width:42rpx;height:47rpx"></image>
+							<image src="../../static/master/消息.png" style="width:42rpx;height:47rpx" @tap="ToSystemInfo"></image>
 						</view>
 					</view>
 				</view>
@@ -67,9 +67,9 @@
 		</view>
 		<view class="orders">
 			<view class="orders-top">我的接单</view>
-			<view class="order-middle">
+			<view class="order-middle" v-for="(item , index) in order" :key="index">
 				<view class="order-middle-1">
-					<text style="font-size:24rpx;color: #666666;">订单编号:&nbsp;{{reference}}</text>
+					<text style="font-size:24rpx;color: #666666;">订单编号:&nbsp;{{item.reference}}</text>
 					<text style="font-size:24rpx;color: #666666;">{{year}}&nbsp;&nbsp;{{time}}</text>
 				</view>
 				<view class="order-middle-2">
@@ -127,13 +127,19 @@
 				demand: "快点！！！",
 				username: "陈小凡",
 				number: "13159486531",
-				Adress: "河南省郑州市郑东新区CBD商务外环路5号国际商会"
+				Adress: "河南省郑州市郑东新区CBD商务外环路5号国际商会",
+				order:[{reference:232323232},{reference:235523232},{reference:332323232}]
 			};
 		},
 		methods: {
 			ToDetail(){
 				uni.navigateTo({
 					url:"../ordersDetail/ordersDetail"
+				})
+			},
+			ToSystemInfo(){
+				uni.navigateTo({
+					url:"../inform/inform"
 				})
 			},
 			onTabChange(e) {
@@ -157,7 +163,7 @@
 
 <style lang="scss" scoped>
 	.orders{
-		height: 800rpx;
+		// height: 800rpx;
 	}
 	.order-middle-7 {
 		display: flex;
@@ -211,10 +217,10 @@
 		width: 690rpx;
 		height: 530rpx;
 		border-radius: 25rpx;
-		margin-top: 23rpx;
+		margin-top: 25rpx;
 		margin-left: 30rpx;
 		background: #FFFFFF;
-
+		
 	}
 
 	.orders .orders-top {
