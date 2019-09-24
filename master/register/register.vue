@@ -30,11 +30,13 @@
 				passwd: "",
 				getCodeText: '获取验证码',
 				getCodeBtnColor: "#4C80FB",
-				getCodeisWaiting: false
+				getCodeisWaiting: false,
+				
 			}
 		},
 		methods: {
 			Timer() {},
+			//验证码发送
 			getCode() {
 				uni.hideKeyboard()
 				if (this.getCodeisWaiting) {
@@ -74,80 +76,73 @@
 					holdTime--;
 				}, 1000)
 			},
+			//存本地密码账号
 			doReg() {
-				uni.hideKeyboard()
-				//验证手机号
-				if (!(/^1(3|4|5|6|7|8|9)\d{9}$/.test(this.phoneNumber))) {
-					uni.showToast({
-						title: '请填写正确手机号码',
-						icon: "none"
-					});
-					return false;
-				}
-				//示例验证码
-				if (this.code != 1234) {
-					uni.showToast({
-						title: '验证码不正确',
-						icon: "none"
-					});
-					return false;
-				}
-				uni.showLoading({
-					title: '提交中...'
+				setTimeout(()=>{
+					uni.hideKeyboard()
+					//验证手机号
+					if (!(/^1(3|4|5|6|7|8|9)\d{9}$/.test(this.phoneNumber))) {
+						uni.showToast({
+							title: '请填写正确手机号码',
+							icon: "none"
+						});
+						return false;
+					}
+					//示例验证码
+					if (this.code != 1234) {
+						uni.showToast({
+							title: '验证码不正确',
+							icon: "none"
+						});
+						return false;
+					}
+					uni.showLoading({
+						title: '提交中...'
+					})
+					判断localstorage是否已存在该用户
+					let usern = this.phoneNumber
+					let uList= uni.getStorageSync("UserList")||[]
+					let index =uList.indexOf(usern)
+					if(index>-1){
+						uni.showToast({
+							title:"该手机号已注册"
+						})
+						return  false;
+					}else{
+						uni.setStorage({
+							key:"UserList",
+							data:usern,
+							success() {
+								uni.showToast({title: '注册成功',icon: "success"});
+								uni.navigateBack({
+								})
+							}
+						})
+						setTimeout(()=>{
+							uni.setStorage({
+								key:'UserList',
+								success: (res) => {
+									res.data.push({username:this.phoneNumber,passwd:md5(this.passwd)})
+									uni.setStorage({
+										key:"UserList",
+										data:res.data,
+										success:function(){
+											uni.hideLoading()
+											uni.showToast({
+												title:'注册成功',icon:'success'
+											});
+											setTimeout(function(){
+												uni.navigateBack({
+													
+												})
+											},1000)
+										}
+									})
+								}
+							})
+						})
+					}
 				})
-				//存储模板示例用户
-
-				setTimeout(() => {
-					uni.getStorage({
-						key: "UserList",
-						success(res) {
-							console.log(res)
-							res.data.push({
-								username: this.phoneNumber,
-								password: md5(this.passwd)
-							})
-							uni.setStorage({
-								key: 'UserList',
-								data: res.data,
-								success: function() {
-									uni.hideLoading()
-									uni.showToast({
-										title: "注册成功",
-										icon: "success"
-									});
-									setTimeout(function() {
-										uni.navigateBack();
-									}, 1000)
-								}
-							});
-						},
-						fail: (e) => {
-							uni.hideLoading()
-
-							//新建userlist
-							uni.setStorage({
-								key: "UserList",
-								data: [{
-									username: "this.phoneNumber",
-									passwd: md5(this.passwd)
-								}],
-								success: function() {
-									uni.hideLoading()
-									uni.showToast({
-										title: "注册成功",
-										icon: "success"
-									});
-									setTimeout(function() {
-										uni.navigateBack();
-									}, 1000);
-								},
-								fail: function(e) {
-									console.log('set error:' + JSON.stringify(e))
-								}
-							})
-						}
-					});
-				}, 1000)
 			},
 			toLogin() {
 				uni.hideKeyboard()

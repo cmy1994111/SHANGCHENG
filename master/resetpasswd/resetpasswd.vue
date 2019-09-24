@@ -91,6 +91,7 @@
 					});
 					return false;
 				}
+				
 				if(this.passwd!==this.passwd1){
 					uni.showToast({
 						title:"密码不一致请重新输入",
@@ -98,6 +99,9 @@
 					});
 					 return false;
 				}
+				
+				
+				
 				//示例验证码，实际使用中应为请求服务器比对验证码是否正确。
 				if (this.code != 1234) {
 					uni.showToast({

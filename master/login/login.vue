@@ -75,7 +75,6 @@
 					provider: provider,
 					success: (loginRes)=>{
 						console.log("success: "+JSON.stringify(loginRes));
-						//案例直接获取用户信息，一般不是在APP端直接获取用户信息，比如微信，获取一个code，传递给后端，后端再去请求微信服务器获取用户信息
 						uni.getUserInfo({
 							provider: provider,
 							success: (infoRes)=>{

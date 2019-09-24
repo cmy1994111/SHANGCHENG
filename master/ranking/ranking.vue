@@ -124,8 +124,12 @@
 		},
 		methods:{
 			 onClickLeft() {
-			   uni.navigateTo({
-			   	url:"../myselfs/myselfs"
+			 //   uni.navigateTo({
+			 //   	// url:"../myselfs/myselfs"
+				
+			 //   })
+			   uni.navigateBack({
+			   	delta:1
 			   })
 			  }
 		}

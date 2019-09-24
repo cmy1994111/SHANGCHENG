@@ -1,9 +1,38 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "components/classify/classify",
+			"style": {
+				"navigationBarTitleText": "商品分类",
+				"navigationBarTextStyle":"black",
+				"backgroundColor":"#FFFFFF"
+			}
+		},
+		{
+			"path": "components/getyouhuijuan/getyouhuijuan",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+
+		{
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "我的订单"
+			}
+		},
+		{
+			"path": "master/selectadress/selectadress",
+			"style": {
+				"navigationBarTitleText": "地址选择",
+				"navigationBarBackgroundColor": "#1A78DF",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
 			"path": "master/register/register",
 			"style": {
-				"navigationStyle":"custom"
+				"navigationStyle": "custom"
 			}
 		},
 		{
@@ -71,13 +100,6 @@
 				"navigationBarTitleText": "订单"
 			}
 		},
-
-		{
-			"path": "pages/order/order",
-			"style": {
-				"navigationBarTitleText": "我的订单"
-			}
-		},
 		{
 			"path": "master/ordersDetail/ordersDetail",
 			"style": {
@@ -124,22 +146,18 @@
 				"navigationBarTitleText": "评价"
 			}
 		},
-
 		{
 			"path": "components/cart/cart",
 			"style": {
 				"navigationBarTitleText": "购物车"
 			}
 		},
-
 		{
 			"path": "components/detail/detail",
 			"style": {
 				"navigationBarTitleText": "订单详情"
 			}
 		},
-
-
 		{
 			"path": "components/coupon/coupon",
 			"style": {
@@ -153,8 +171,6 @@
 				// "navigationStyle":"custom"
 			}
 		},
-
-
 		{
 			"path": "pages/index/index",
 			"style": {
@@ -168,37 +184,14 @@
 				"navigationBarTitleText": "商城"
 			}
 		}
-		// 
-		//  {
-		//    "path" : "pages/myself/myself",
-		//    "style" : {
-		//  "navigationBarTitleText": ""
-		// } 
-		//  }
-		// ,{
-		//     "path" : "pages/index/qidong/qidong",
-		//     "style" : {}
-		// }
 
-
-		//      ,{
-		//          "path" : "components/collection/collection",
-		//          "style" : {
-		// 	"navigationBarTitleText": "我的收藏"
-		// }
-		//      }
 		, {
 			"path": "components/change/change",
 			"style": {
 				"navigationBarTitleText": "申请成为师傅"
 			}
 		}
-		//      ,{
-		//          "path" : "components/coupon/coupon",
-		//          "style" : {
-		// 	"navigationBarTitleText": "我的优惠卷"
-		// }
-		//      }
+
 		, {
 			"path": "components/address/address",
 			"style": {
@@ -226,16 +219,16 @@
 		{
 			"path": "master/login/login",
 			"style": {
-				"navigationStyle":"custom"
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "master/resetpasswd/resetpasswd",
+			"style": {
+				"navigationStyle": "custom"
 			}
 		}
-	    ,{
-            "path" : "master/resetpasswd/resetpasswd",
-            "style": {
-            	"navigationStyle":"custom"
-            }
-        }
-    ],
+
+	],
 	"globalStyle": {
 		"navigationBarTitleText": "Vant For Uni-app",
 		"navigationBarBackgroundColor": "#f8f8f8",

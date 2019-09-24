@@ -1,5 +1,9 @@
 {
   "pages": [
+    "components/classify/classify",
+    "components/getyouhuijuan/getyouhuijuan",
+    "pages/order/order",
+    "master/selectadress/selectadress",
     "master/register/register",
     "master/myselfs/myselfs",
     "master/home/home",
@@ -10,7 +14,6 @@
     "master/account/account",
     "master/evaluates/evaluates",
     "master/orders/orders",
-    "pages/order/order",
     "master/ordersDetail/ordersDetail",
     "master/ranking/ranking",
     "pages/myself/myself",
@@ -120,5 +123,6 @@
     "van-collapse": "/wxcomponents/vant/collapse/index",
     "van-collapse-item": "/wxcomponents/vant/collapse-item/index",
     "van-picker": "/wxcomponents/vant/picker/index"
-  }
+  },
+  "sitemapLocation": "sitemap78.json"
 }
