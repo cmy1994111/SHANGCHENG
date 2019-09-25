@@ -1,9 +1,11 @@
 {
   "pages": [
+    "pages/myself/myself",
+    "master/aptitude/aptitude",
     "components/classify/classify",
+    "master/selectadress/selectadress",
     "components/getyouhuijuan/getyouhuijuan",
     "pages/order/order",
-    "master/selectadress/selectadress",
     "master/register/register",
     "master/myselfs/myselfs",
     "master/home/home",
@@ -16,8 +18,6 @@
     "master/orders/orders",
     "master/ordersDetail/ordersDetail",
     "master/ranking/ranking",
-    "pages/myself/myself",
-    "master/aptitude/aptitude",
     "components/about/about",
     "components/qidong/qidong",
     "components/appraise/appraise",
@@ -123,6 +123,5 @@
     "van-collapse": "/wxcomponents/vant/collapse/index",
     "van-collapse-item": "/wxcomponents/vant/collapse-item/index",
     "van-picker": "/wxcomponents/vant/picker/index"
-  },
-  "sitemapLocation": "sitemap78.json"
+  }
 }

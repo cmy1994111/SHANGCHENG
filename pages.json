@@ -1,13 +1,38 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	{
+		"path": "pages/myself/myself",
+		"style": {
+			"navigationBarTitleText": "",
+			"navigationStyle": "custom"
+		}
+	},
+		{
+			"path": "master/aptitude/aptitude",
+			"style": {
+				"navigationBarTitleText": "资质验证",
+				"navigationBarBackgroundColor": "#1A78DF",
+				"navigationBarTextStyle":"white"
+			}
+		},
+		
 		{
 			"path": "components/classify/classify",
 			"style": {
 				"navigationBarTitleText": "商品分类",
-				"navigationBarTextStyle":"black",
-				"backgroundColor":"#FFFFFF"
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
 			}
 		},
+		{
+			"path": "master/selectadress/selectadress",
+			"style": {
+				"navigationBarTitleText": "地址选择",
+				"navigationBarBackgroundColor": "#1A78DF",
+				"navigationBarTextStyle": "white"
+			}
+		},
+
 		{
 			"path": "components/getyouhuijuan/getyouhuijuan",
 			"style": {
@@ -19,14 +44,6 @@
 			"path": "pages/order/order",
 			"style": {
 				"navigationBarTitleText": "我的订单"
-			}
-		},
-		{
-			"path": "master/selectadress/selectadress",
-			"style": {
-				"navigationBarTitleText": "地址选择",
-				"navigationBarBackgroundColor": "#1A78DF",
-				"navigationBarTextStyle": "white"
 			}
 		},
 		{
@@ -114,20 +131,6 @@
 				"navigationStyle": "custom"
 			}
 		},
-		{
-			"path": "pages/myself/myself",
-			"style": {
-				"navigationBarTitleText": "",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "master/aptitude/aptitude",
-			"style": {
-				"navigationBarTitleText": "资质验证"
-			}
-		},
-
 		{
 			"path": "components/about/about",
 			"style": {

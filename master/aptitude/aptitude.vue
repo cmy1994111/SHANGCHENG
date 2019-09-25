@@ -4,16 +4,16 @@
 
 
 			<van-cell-group>
-				<van-field :value="username" label="姓名" placeholder="" />
+				<van-field :value="username" label="姓名"  />
 
 
-				<van-field :value="phone" label="联系方式" placeholder="" />
+				<van-field :value="phone" label="联系方式"  />
 
-				<van-field :value="shop" label="店铺名称" placeholder="" />
+				<van-field :value="shop" label="店铺名称"  />
 
-				<van-field custom-class="city" :value="city" label="所在城市" icon="arrow" />
+				<van-field custom-class="city" :value="city"  disabled  label="所在城市" icon="arrow" />
 
-				<van-field :value="Service" label="服务站" placeholder="" />
+				<van-field :value="Service" label="服务站" />
 			</van-cell-group>
 		</view>
 		<view class="shop-adress">
@@ -38,11 +38,11 @@
 	export default {
 		data() {
 			return {
-				username: "1111",
-				phone: "1111",
-				shop: "1111",
-				city: "1111",
-				Service: "1111",
+				username: "",
+				phone: "",
+				shop: "",
+				city: "",
+				Service: "",
 				fileList: [
 				        { url: 'https://img.yzcdn.cn/vant/cat.jpeg' },
 				        // Uploader 根据文件后缀来判断是否为图片文件

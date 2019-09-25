@@ -3,7 +3,7 @@
 		<view class="nav-top" style="display: flex;width: 690rpx;height: 98rpx;align-items: center;justify-content: space-between;    border-radius: 100rpx;margin-left: 29rpx;border:1px solid rgba(229,229,229,1);">
 			<!-- <button style="width:335rpx;height:78rpx;border-radius: 100px;line-height: 78rpx;" @tap="Toservice">服务订单</button>
 			<button style="width:335rpx;height:78rpx;border-radius: 100px;line-height: 78rpx;" @tap="Toshop">商品订单</button> -->
-			<view style="width:335rpx;height:78rpx;border-radius: 100px;line-height: 78rpx;" v-for="(but,index) in Buttons" @tap="ItemButtonChange(index)" :key="index" :class="{'bg3':index===list,'bg1':!(index===list)}">{{but.name}}</view>
+			<view style="width:335rpx;height:78rpx;border-radius: 100px;line-height: 78rpx;text-align: center;" v-for="(but,index) in Buttons" @tap="ItemButtonChange(index)" :key="index" :class="{'bg3':index===list,'bg1':!(index===list)}">{{but.name}}</view>
 		</view>
 		<view v-if="list===0">
 			<view class="nav">
@@ -261,7 +261,10 @@
 </template>
 
 <script>
+	import hTimePicker from "@/components/h-timePicker/h-timePicker.vue"
 	export default {
+		components: { hTimePicker },
+		
 		data() {
 			return {
 				slot: "顶吸",

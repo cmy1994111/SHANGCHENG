@@ -162,11 +162,11 @@ var _default =
 {
   data: function data() {
     return {
-      username: "1111",
-      phone: "1111",
-      shop: "1111",
-      city: "1111",
-      Service: "1111",
+      username: "",
+      phone: "",
+      shop: "",
+      city: "",
+      Service: "",
       fileList: [
       { url: 'https://img.yzcdn.cn/vant/cat.jpeg' },
       // Uploader 根据文件后缀来判断是否为图片文件

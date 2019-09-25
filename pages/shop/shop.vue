@@ -23,19 +23,19 @@
 			</swiper-item>
 		</swiper>
 		<view class="middle">
-			<view class="middle-1">
+			<view class="middle-1" >
 				<image src="../../static/清洁剂.png"></image>
 				<text>清洁剂</text>
 			</view>
-			<view class="middle-2">
+			<view class="middle-2" >
 				<image src="../../static/家电.png"></image>
 				<text>家电</text>
 			</view>
-			<view class="middle-3">
+			<view class="middle-3" >
 				<image src="../../static/日用家居.png"></image>
 				<text>日用家居</text>
 			</view>
-			<view class="middle-4">
+			<view class="middle-4" @tap="ToDetail">
 				<image src="../../static/更多.png"></image>
 				<text>更多</text>
 			</view>
@@ -49,9 +49,6 @@
 				<text>Hot goods</text>
 			</view>
 		</view> 
-		
-		
-		
 		<view class="footer">
 			<view class="footer-left">
 				<image src="../../static/空调-首页.png"></image>
@@ -111,11 +108,21 @@
 				duration: 500,
 				money:700,
 				yuanjia:300,
-				num:4000
+				num:4000,
+				Details:[
+					{name: "清洁剂",check:true},
+					{name: "家电",check:true},
+					{name: "日用家居",check:true},
+					{name: "更多",check:true}
+				]
 			}
 		},
 		methods: {
-			
+			ToDetail(){
+				uni.navigateTo({
+					url:"../../components/detail/detail"
+				})
+			}
 		}
 	}
 </script>

@@ -33,20 +33,34 @@
 					<view style="font-size: 26rpx; color: #999999;">地址:</view>
 					<view class="order-middle-6" style="margin-left:17rpx;color:#666666 ;font-size: 26rpx;width:498rpx;">{{Adress}}</view>
 				</view>
-					<view class="order-middle-7">
-						<view class="userServie" style="display: flex;">
-							<view style="display: flex;flex-direction: column;justify-content: center;">
-								<text style="font-size: 26rpx;color: #999999;">客户已确认服务</text>
-								<text  style="font-size: 22rpx;color:#DEDEDE ;">{{years}}&nbsp;{{time}}</text>
-							</view>
-							<image slot="icon" src="../../static/master/userservice.png" style="width: 36rpx;height: 36rpx; margin:28rpx;" ></image>
+				<view class="order-middle-7">
+					<view class="userServie" style="display: flex;">
+						<view style="display: flex;flex-direction: column;justify-content: center;">
+							<text style="font-size: 26rpx;color: #999999;">客户已确认服务</text>
+							<text style="font-size: 22rpx;color:#DEDEDE ;">{{years}}&nbsp;{{time}}</text>
+							<van-dialog use-slot title="标题" 
+							:show="show" show-cancel-button confirm-button-open-type="getUserInfo" @close="onClose">
+								<van-datetime-picker
+								 :show-toolbar="false" 
+									type="date" 
+									:value="currentDate"
+									:input="onInput" cancel-button-text confirm-button-text	
+								  :min-date="minDate" 
+								   :formatter="formatter"
+								   :ToChange='getColumnValue'
+									/>  
+							</van-dialog>
 						</view>
-						<button style="width:160rpx;height:60rpx;font-size:26rpx;color: #999999;border-radius: 30rpx;text-align: center;line-height: 60rpx;margin-left: 60rpx;">上门服务</button>
-						<button style="width: 160rpx;height:60rpx;font-size:26rpx;color: #999999;border-radius: 30rpx;text-align: center;line-height: 60rpx;" @tap="ToDetail">查看详情</button>
+						<image slot="icon" src="../../static/master/userservice.png" style="width: 36rpx;height: 36rpx; margin:28rpx;"
+						 @tap="bindClick"></image>
 					</view>
+					<button style="width:160rpx;height:60rpx;font-size:26rpx;color: #999999;border-radius: 30rpx;text-align: center;line-height: 60rpx;margin-left: 60rpx;">上门服务</button>
+					<button style="width: 160rpx;height:60rpx;font-size:26rpx;color: #999999;border-radius: 30rpx;text-align: center;line-height: 60rpx;"
+					 @tap="ToDetail">查看详情</button>
+				</view>
 			</view>
 		</view>
-		
+
 		<!-- 服务完成 -->
 		<view class="orders">
 			<view class="order-middle-all">
@@ -58,7 +72,7 @@
 					<view class="order-middle-2-left-img" style="margin: 0 24rpx ;">
 						<image src="../../static/youyanji.png" style="width: 100rpx;height: 97rpx;"></image>
 					</view>
-					<view class="order-middle-2-right-detail" style="display: flex;flex-direction: column;justify-content: space-between;">
+					<view class="order-middle-2-right-detail" style="display:flex;flex-direction: column;justify-content: space-between;">
 						<view style="font-size:28rpx;color: #333333;">{{product}}</view>
 						<view style="font-size:24rpx;color: #999;">产品规格:{{producttype}}</view>
 						<view style="font-size:30rpx;color: #FB2846;">￥{{price}}</view>
@@ -70,29 +84,35 @@
 						<text style="font-size: 26rpx;color: #666666;">{{demand}}</text>
 					</view>
 				</view>
-				
-					<view class="order-middle-7">
-						<view class="userServie" style="display: flex;">
-							<view style="display: flex;flex-direction: column;justify-content: center;">
-								<text style="font-size: 26rpx;color: #999999;">客户已确认服务</text>
-								<text  style="font-size: 22rpx;color:#DEDEDE ;">{{years}}&nbsp;{{time}}</text>
-							</view>
-							<image slot="icon" src="../../static/master/userservice.png" style="width: 36rpx;height: 36rpx; margin:28rpx;" ></image>
+
+				<view class="order-middle-7">
+					<view class="userServie" style="display: flex;">
+						<view style="display: flex;flex-direction: column;justify-content: center;">
+							<text style="font-size: 26rpx;color: #999999;">客户已确认服务</text>
+							<text style="font-size: 22rpx;color:#DEDEDE ;">{{years}}&nbsp;{{time}}</text>
 						</view>
-						<button style="width:160rpx;height:60rpx;font-size:26rpx;color: #999999;border-radius: 30rpx;text-align: center;line-height: 60rpx;margin-left: 60rpx;">服务完成</button>
-						<button style="width: 160rpx;height:60rpx;font-size:26rpx;color: #999999;border-radius: 30rpx;text-align: center;line-height: 60rpx;" @tap="ToDetail">查看详情</button>
+						<image slot="icon" src="../../static/master/userservice.png" style="width: 36rpx;height: 36rpx; margin:28rpx;"></image>
 					</view>
+					<button style="width:160rpx;height:60rpx;font-size:26rpx;color: #999999;border-radius: 30rpx;text-align: center;line-height: 60rpx;margin-left: 60rpx;">服务完成</button>
+					<button style="width: 160rpx;height:60rpx;font-size:26rpx;color: #999999;border-radius: 30rpx;text-align: center;line-height: 60rpx;"
+					 @tap="ToDetail">查看详情</button>
+				</view>
 			</view>
 		</view>
 	</view>
 </template>
 
 <script>
+	import neilModal from '@/components/neil-modal/neil-modal.vue'
 	export default {
+		components: {
+			neilModal
+		},
 		name: "tabbar",
 		data() {
 			return {
-
+				currentDate: new Date().getTime(),
+				minDate: new Date().getTime(),
 				sum: 12,
 				reference: 6666666666,
 				adress: "郑州",
@@ -107,13 +127,42 @@
 				username: "陈小凡",
 				number: "13159486531",
 				Adress: "河南省郑州市郑东新区CBD商务外环路5号国际商会",
-				years:"209.09.21"
+				years: "209.09.21",
+				show: false
+
 			};
 		},
 		methods: {
-			ToDetail(){
+			getColumnValue(index){
+				console.log(index)
+			},
+			formatter(type, value) {
+				if (type === 'year') {
+					return `${value}年`;
+				} else if (type === 'month') {
+					return `${value}月`;
+				}
+				return value;
+			},
+			onInput(event) {
+				this.setData({
+					currentDate: event.detail
+				});
+			},
+			bindClick() {
+				this.show = true
+			},
+			getUserInfo(event) {
+				console.log(event.detail);
+			},
+			onClose() {
+				console.log(`监听到close`)
+				this.show = false
+				
+			},
+			ToDetail() {
 				uni.navigateTo({
-					url:"../ordersDetail/ordersDetail"
+					url: "../ordersDetail/ordersDetail"
 				})
 			},
 			onTabChange(e) {
@@ -121,14 +170,14 @@
 				console.log(111)
 				this.active = e.detail
 			},
-			ToChange(){
+			ToChange() {
 				uni.navigateTo({
-					url:"../orders/orders"
+					url: "../orders/orders"
 				})
 			},
-			ToMyself(){
+			ToMyself() {
 				uni.navigateTo({
-					url:"../myselfs/myselfs"
+					url: "../myselfs/myselfs"
 				})
 			}
 		}
@@ -136,26 +185,31 @@
 </script>
 
 <style lang="scss" scoped>
-	.orders{
+	.picker-tabbar{
+		display: none;
+	}
+	.orders {
 		// height: 800rpx;
 	}
+
 	.order-middle-all {
-			width: 690rpx;
-			height: 400rpx;
-			border-radius: 25rpx;
-			margin-top: 23rpx;
-			margin-left: 30rpx;
-			background: #FFFFFF;
-	
-		}
+		width: 690rpx;
+		height: 400rpx;
+		border-radius: 25rpx;
+		margin-top: 23rpx;
+		margin-left: 30rpx;
+		background: #FFFFFF;
+
+	}
+
 	.order-middle-7 {
 		display: flex;
 		width: 670rpx;
 		height: 110rpx;
 		justify-content: space-between;
 		align-items: center;
-		margin-left:23rpx;
-		
+		margin-left: 23rpx;
+
 	}
 
 	.order-middle-5 {
@@ -198,7 +252,7 @@
 		margin-left: 24rpx;
 	}
 
-.order-middle .order-middle-1 {
+	.order-middle .order-middle-1 {
 		width: 650rpx;
 		height: 64rpx;
 		border-bottom: 1rpx solid #dedede;
@@ -207,6 +261,7 @@
 		align-items: center;
 		margin-left: 24rpx;
 	}
+
 	.order-middle {
 		width: 690rpx;
 		height: 550rpx;
