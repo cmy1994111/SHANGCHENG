@@ -43,8 +43,10 @@
 				<editor class="editor-text" placeholder="请输入详细说明" @input='contentChange'></editor>
 			</view>
 			<view class="footer-bottom">
-				<view class="uploading">上传照片</view>
-				<button class="uploading-img" @tap="" ></button>
+				<view class="uploading" @tap="UploadFiles">上传照片</view>
+				<image class="uploading-img" @tap="Upload" :src="ImagUrl" ></image>
+				<image class="uploading-img" @tap="Upload1" :src="ImagUrl1" ></image>
+				<image class="uploading-img" @tap="Upload2" :src="ImagUrl2" ></image>
 			</view>
 			<button type="primary">提交信息</button>
 		</view>
@@ -60,10 +62,54 @@
 		},
 		data() {
 			return {
-				start:4
+				start:4,
+				ImagUrl:"",
+				ImagUrl1:"",
+				ImagUrl2:""
 			}
 		},
 		methods: {
+		
+			Upload(){
+				let that = this
+				uni.chooseImage({
+				    count: 6, //默认9
+				    sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
+				    sourceType: ['album',"camera"], //从相册选择
+				    success: function (res) {
+				        console.log(JSON.stringify(res.tempFilePaths));
+						
+						that.ImagUrl = res.tempFilePaths[0]
+						
+				    }
+				});
+			},
+			Upload1(){
+				let that = this
+				uni.chooseImage({
+				    count: 6, //默认9
+				    sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
+				    sourceType: ['album'], //从相册选择
+				    success: function (res) {
+				        console.log(JSON.stringify(res.tempFilePaths));
+						
+						that.ImagUrl1 = res.tempFilePaths[0]
+						
+				    }
+				});
+			},
+			Upload2(){
+				let that = this
+				uni.chooseImage({
+				    count: 6, //默认9
+				    sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
+				    sourceType: ['album'], //从相册选择
+				    success: function (res) {
+				        console.log(JSON.stringify(res.tempFilePaths));					
+						that.ImagUrl2 = res.tempFilePaths[0]
+				    }
+				});
+			},
 			changeStar(e){
 				console.log(e.curStar)
 				this.start=e.curStar
@@ -80,7 +126,7 @@
 			width: 210rpx;
 			height:143rpx;
 			margin: 30rpx 0 29rpx 40rpx;
-			background: url();
+			background: #DEDEDE;
 		}
 		.uploading-img image{
 			width: 210rpx;

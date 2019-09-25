@@ -3,7 +3,7 @@
 		width: 210rpx;
 		height:143rpx;
 		margin: 30rpx 0 29rpx 40rpx;
-		background: url();
+		background: #DEDEDE;
 }
 .uploading-img image.data-v-b58aca00{
 		width: 210rpx;

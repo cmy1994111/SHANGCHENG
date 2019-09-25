@@ -1,21 +1,47 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-	{
-		"path": "pages/myself/myself",
-		"style": {
-			"navigationBarTitleText": "",
-			"navigationStyle": "custom"
-		}
-	},
+		{
+			"path": "components/paysuccess/paysuccess",
+			"style": {
+				"navigationBarTitleText": "支付成功",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "components/acknowledgement/acknowledgement",
+			"style": {
+				"navigationBarTitleText": "确认订单",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "components/appraise/appraise",
+			"style": {
+				"navigationBarTitleText": "评价"
+			}
+		},
+		{
+			"path": "master/myselfs/myselfs",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
 		{
 			"path": "master/aptitude/aptitude",
 			"style": {
 				"navigationBarTitleText": "资质验证",
 				"navigationBarBackgroundColor": "#1A78DF",
-				"navigationBarTextStyle":"white"
+				"navigationBarTextStyle": "white"
 			}
 		},
-		
+		{
+			"path": "pages/myself/myself",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+			}
+		},
 		{
 			"path": "components/classify/classify",
 			"style": {
@@ -32,14 +58,12 @@
 				"navigationBarTextStyle": "white"
 			}
 		},
-
 		{
 			"path": "components/getyouhuijuan/getyouhuijuan",
 			"style": {
 				"navigationStyle": "custom"
 			}
 		},
-
 		{
 			"path": "pages/order/order",
 			"style": {
@@ -48,12 +72,6 @@
 		},
 		{
 			"path": "master/register/register",
-			"style": {
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "master/myselfs/myselfs",
 			"style": {
 				"navigationStyle": "custom"
 			}
@@ -143,12 +161,7 @@
 				"navigationStyle": "custom"
 			}
 		},
-		{
-			"path": "components/appraise/appraise",
-			"style": {
-				"navigationBarTitleText": "评价"
-			}
-		},
+
 		{
 			"path": "components/cart/cart",
 			"style": {
@@ -186,33 +199,24 @@
 			"style": {
 				"navigationBarTitleText": "商城"
 			}
-		}
-
-		, {
+		}, {
 			"path": "components/change/change",
 			"style": {
 				"navigationBarTitleText": "申请成为师傅"
 			}
-		}
-
-		, {
+		}, {
 			"path": "components/address/address",
 			"style": {
 				"navigationBarTitleText": "收货地址"
 			}
-		}
-
-
-		, {
+		}, {
 			"path": "master/abouts/abouts",
 			"style": {
 				"navigationBarTitleText": "关于我们",
 				"navigationBarTextStyle": "white",
 				"navigationBarBackgroundColor": "#1A78DF"
 			}
-		}
-
-		, {
+		}, {
 			"path": "master/masterdetail/masterdetail",
 			"style": {
 				"navigationBarTitleText": "订单详情",

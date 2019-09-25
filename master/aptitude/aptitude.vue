@@ -24,11 +24,15 @@
 			<view class="card-text">
 				证件信息
 			</view>
-			<view class="card-1">
-				<van-uploader v-model="fileList" multiple />
+			<view class="card-1" @tap="UploadFiles">
+				<image :src="imageUrl" style="width: 540rpx;height: 360rpx;"></image>
 			</view>
-			<view class="card-2"></view>
-			<view class="card-3"></view>
+			<view class="card-2"  @tap="UploadFiles1">
+				<image :src="imageUrl1" style="width: 540rpx;height: 360rpx;"></image>
+			</view>
+			<view class="card-3"  @tap="UploadFiles2">
+				<image :src="imageUrl2" style="width: 540rpx;height: 360rpx;"></image>
+			</view>
 		</view>
 		<button type="danger" style="background: #1A78DF; color: #fff;margin-top: 100rpx;" @tap="submit">提交信息</button>
 	</view>
@@ -38,20 +42,56 @@
 	export default {
 		data() {
 			return {
+				imageUrl:"",
+				imageUrl1:"",
+				imageUrl2:"",
 				username: "",
 				phone: "",
 				shop: "",
 				city: "",
 				Service: "",
-				fileList: [
-				        { url: 'https://img.yzcdn.cn/vant/cat.jpeg' },
-				        // Uploader 根据文件后缀来判断是否为图片文件
-				        // 如果图片 URL 中不包含类型信息，可以添加 isImage 标记来声明
-				        { url: 'https://cloud-image', isImage: true }
-				      ]
 			}
 		},
 		methods: {
+			UploadFiles(){
+				let that = this
+				uni.chooseImage({
+				    count: 1, //默认9
+				    sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
+				    sourceType: ['album',"camera "], //从相册选择
+				    success: function (res) {
+				  //       console.log(JSON.stringify(res.tempFilePaths));
+						// console.log(res.tempFilePaths[0]);
+						that.imageUrl = res.tempFilePaths[0]
+				    }
+				});
+			},
+			UploadFiles1(){
+				let that = this
+				uni.chooseImage({
+				    count: 1, //默认9
+				    sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
+				    sourceType: ['album',"camera "], //从相册选择
+				    success: function (res) {
+				  //       console.log(JSON.stringify(res.tempFilePaths));
+						// console.log(res.tempFilePaths[0]);
+						that.imageUrl1 = res.tempFilePaths[0]
+				    }
+				});
+			},
+			UploadFiles2(){
+				let that = this
+				uni.chooseImage({
+				    count: 1, //默认9
+				    sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
+				    sourceType: ['album',"camera "], //从相册选择
+				    success: function (res) {
+				  console.log(JSON.stringify(res.tempFilePaths));
+						 console.log(res.tempFilePaths);
+						that.imageUrl2 = res.tempFilePaths[0]
+				    }
+				});
+			},
 			onClickIcon(event) {
 				// event.detail 为当前输入的值
 				console.log(event.detail);
