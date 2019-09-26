@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<view class="all">
+		<view class="all" v-for="(item,index) in Collects" :key="index" @tap="ToDetail(index)">
 		<view class="shopPing">
 			<view class="shopPing-left">
 				<image :src="imageURL"></image>
@@ -19,12 +19,11 @@
 			</view>
 		</view>
 		<view class="collect" style="display: flex;justify-content:flex-end;">
-			<text class="collect-text" style="font-size: 26rpx;color:rgba(102,102,102,1);">{{year}}收藏</text>
+			<text class="collect-text" style="font-size: 26rpx;color:rgba(102,102,102,1);">{{item.year}}收藏</text>
 		</view>
 		</view>
 	</view>
 </template>
-
 <script>
 	export default {
 		data() {
@@ -34,14 +33,26 @@
 				imageURL:"/static/logo.png",
 				num2:"2",
 				sold:"88",
-				year:"2018.9.1"
+				year:"2018.9.1",
+				Collects:[
+					{year:"2018.9.2"},
+					{year:"2019.9.12"},
+					{year:"2019.9.13"},
+					{year:"2019.9.14"},
+					{year:"2019.9.15"},
+					{year:"2019.9.16"},
+				]
 			}
 		},
 		onLoad(){
 			
 		},
 		methods: {
-			
+			ToDetail(index){
+				uni.navigateTo({
+					url:"../detail/detail"
+				})
+			}
 		}
 	}
 </script>

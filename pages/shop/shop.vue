@@ -1,9 +1,10 @@
 <template>
 	<view>
 		<view class="nav">
-		<view class="nav-left" :tap="weizhi">{{slot}}</view>
+		<view class="nav-left" @tap="weizhi">{{slot}}</view>
 		<view class="nav-middle"></view>
-		<view class="nav-right">{{duct}}</view>
+		<button class="nav-middle-search"></button>
+		<input class="nav-right" type="text" :placeholder="duct">
 		</view>
 		<swiper class="swiper" :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval" :duration="duration">
 			<swiper-item>
@@ -69,10 +70,7 @@
 				<view class="footer-left-text-4">
 					<text>丰本青空调清洗剂家用 挂机清洁洗内机</text>
 				</view>
-			</view>
-			
-			
-			
+			</view>		
 			<view class="footer-right">
 				<image src="../../static/空调-首页.png"></image>
 				<view class="footer-right-text">
@@ -101,7 +99,7 @@
 		data() {
 			return {
 				slot:"郑州",
-				duct:"青木请",
+				duct:"丰本青",
 				indicatorDots: true,
 				autoplay: true,
 				interval: 2000,
@@ -121,6 +119,11 @@
 			ToDetail(){
 				uni.navigateTo({
 					url:"../../components/detail/detail"
+				})
+			},
+			weizhi(){
+				uni.navigateTo({
+					url:"../../master/selectadress/selectadress"
 				})
 			}
 		}
@@ -281,15 +284,26 @@
 		.nav .nav-right{
 			width: 515rpx;
 			height: 58rpx;
-			background: #333333;
-			background: url(../../static/搜索-商城.png) no-repeat;
-			background-size: 28rpx;
-			background-position: 25rpx 18rpx;
-			padding-left: 50rpx;
+			/* background: url(../../static/搜索-商城.png) no-repeat; */
+			/* background-size: 28rpx;
+			background-position: 25rpx 18rpx; */
+			/* padding-left: 50rpx; */
 			font-size: 29rpx;
 			display: flex;
 			align-items: center;
 			color: #BEC2CE;
+		}
+		.nav-middle-search{
+			width: 50rpx;
+			height: 58rpx;
+			background: url(../../static/搜索-商城.png) no-repeat;
+			background-size: 28rpx;
+			background-position: 25rpx 18rpx; 
+			padding-left: 50rpx;
+			
+		}
+		.nav-middle-search::after{
+			display: none;
 		}
 		.swiper{
 			width: 690rpx;

@@ -20,7 +20,7 @@
 </template>
 
 <script>
-	import cityData from '../../common/city.data.js';
+	import cityData from '../../common/citydata.js';
 	export default {
 		data() {
 			return {

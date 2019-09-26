@@ -1,5 +1,5 @@
-import { LETTERS, CITY_LIST } from '../locale/citydata'
-import config from 'config'
+import { LETTERS, CITY_LIST } from '@/common/citydata.js'
+import config from '@/common/config.js'
 
 // API
 const getLocationUrl = (latitude, longitude) => (`https://apis.map.qq.com/ws/geocoder/v1/?location=${latitude},${longitude}&key=${config.key}`)

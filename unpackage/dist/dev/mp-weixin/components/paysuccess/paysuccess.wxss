@@ -29,6 +29,10 @@
   height: 424rpx;
   margin: 87rpx 0 0 200rpx;
 }
+.bg3.data-v-8f529100 {
+  background: #Fce4bd;
+  color: #F5A623;
+}
 .middle.data-v-8f529100 {
   width: 564rpx;
   height: 240rpx;
@@ -42,16 +46,14 @@
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.but1.data-v-8f529100 {
-  width: 560rpx;
-  height: 88rpx;
-  border-radius: 44rpx;
-  border: 2rpx solid #f5a623;
-  font-size: 28rpx;
-  color: #F5A623;
-  text-align: center;
-  line-height: 88rpx;
+.middel view.data-v-8f529100:hover {
+  background: #F5A623;
 }
 .but2.data-v-8f529100 {
   width: 560rpx;

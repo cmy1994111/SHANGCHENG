@@ -47,11 +47,14 @@
 	        justify-content: space-between;
 	margin-left: 30rpx;
 	margin-top: 27rpx;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
 }
 .middle-flex .middle-left.data-v-7871cfd0 {
 	width: 330rpx;
 	height: 336rpx;
-	background:rgba(190,194,206,1);
+	background:#f2f3f5;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -68,11 +71,12 @@
 	-webkit-align-items: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	margin-top: 20rpx;
 }
 .middle-flex .middle-right.data-v-7871cfd0 {
 	width: 330rpx;
 	height: 336rpx;
-	background:rgba(190,194,206,1);
+	background:#f2f3f5;
 }
 .middle-flex .middle-left .middle-left-img image.data-v-7871cfd0 {
 	width: 278rpx;
@@ -128,7 +132,7 @@
 	line-height: 45rpx;
 }
 .middle-flex .middle-right .middle-right-text-middle.data-v-7871cfd0 {
-	width: 130rpx;
+	
 	height: 37rpx;
 	font-size: 26rpx;
 	font-family: PingFangSC;
@@ -170,10 +174,11 @@
 	    -ms-flex-align: center;
 	        align-items: center;
 }
-.middle-flex-1 .middle-right-1.data-v-7871cfd0 {
+.middle-right-1.data-v-7871cfd0 {
 	width: 330rpx;
 	height: 336rpx;
-	background:rgba(190,194,206,1);
+	background:#f2f3f5;
+	margin-top: 20rpx;
 }
 .middle-flex-1 .middle-left-1 .middle-left-img-1 image.data-v-7871cfd0 {
 	width: 278rpx;
@@ -197,7 +202,7 @@
 	color: rgba(153, 153, 153, 1);
 	line-height: 37rpx;
 }
-.middle-flex-1 .middle-right-1.data-v-7871cfd0 {
+.middle-right-1.data-v-7871cfd0 {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -219,14 +224,13 @@
 	width: 278rpx;
 	height: 152rpx;
 }
-.middle-flex-1 .middle-right-1 .middle-right-text-top-1.data-v-7871cfd0 {}
-.middle-flex-1 .middle-right-1 .middle-right-text-top-2.data-v-7871cfd0 {
+.middle-right-1 .middle-right-text-top-2.data-v-7871cfd0 {
 	font-size: 32rpx;
 	font-family: PingFangSC;
 	font-weight: 400;
 	color: rgba(51, 51, 51, 1);
 }
-.middle-flex-1 .middle-right-1 .middle-right-text-top-3.data-v-7871cfd0 {
+.middle-right-1 .middle-right-text-top-3.data-v-7871cfd0 {
 	font-size: 26rpx;
 }
 .middle-flex-1 .middle-number.data-v-7871cfd0 {

@@ -1,6 +1,41 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "master/selectadress/selectadress",
+			"style": {
+				"navigationBarTitleText": "地址选择",
+				"navigationBarBackgroundColor": "#1A78DF",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "我的订单"
+			}
+		},
+		{
+			"path": "components/SerachDetail/SerachDetail",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "components/topalymaster/topalymaster",
+			"style": {
+				"navigationBarTitleText": "申请成为师傅"
+
+			}
+		},
+		{
+			"path": "components/booking/booking",
+			"style": {
+				"navigationBarTitleText": "拼团",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
 			"path": "components/paysuccess/paysuccess",
 			"style": {
 				"navigationBarTitleText": "支付成功",
@@ -50,24 +85,11 @@
 				"backgroundColor": "#FFFFFF"
 			}
 		},
-		{
-			"path": "master/selectadress/selectadress",
-			"style": {
-				"navigationBarTitleText": "地址选择",
-				"navigationBarBackgroundColor": "#1A78DF",
-				"navigationBarTextStyle": "white"
-			}
-		},
+
 		{
 			"path": "components/getyouhuijuan/getyouhuijuan",
 			"style": {
 				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/order/order",
-			"style": {
-				"navigationBarTitleText": "我的订单"
 			}
 		},
 		{

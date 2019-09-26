@@ -1,5 +1,10 @@
 {
   "pages": [
+    "master/selectadress/selectadress",
+    "pages/order/order",
+    "components/SerachDetail/SerachDetail",
+    "components/topalymaster/topalymaster",
+    "components/booking/booking",
     "components/paysuccess/paysuccess",
     "components/acknowledgement/acknowledgement",
     "components/appraise/appraise",
@@ -7,9 +12,7 @@
     "master/aptitude/aptitude",
     "pages/myself/myself",
     "components/classify/classify",
-    "master/selectadress/selectadress",
     "components/getyouhuijuan/getyouhuijuan",
-    "pages/order/order",
     "master/register/register",
     "master/home/home",
     "master/mymoney/mymoney",
@@ -125,5 +128,6 @@
     "van-collapse": "/wxcomponents/vant/collapse/index",
     "van-collapse-item": "/wxcomponents/vant/collapse-item/index",
     "van-picker": "/wxcomponents/vant/picker/index"
-  }
+  },
+  "sitemapLocation": "sitemap8.json"
 }

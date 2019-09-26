@@ -11,33 +11,12 @@
 		</view>
 		<!-- <navigator url="../../components/detail/detail"> -->
 		<view class="middle-flex" @tap="toUser" >
-			<view class="middle-left">
-				<view class="middle-left-text-top">油烟机</view>
+			<view class="middle-left" v-for="(item,index) in users" :key="index">
+				<view class="middle-left-text-top">{{item.name}}</view>
 				<view class="middle-left-text-middle">专业去油污</view>
 				<view class="middle-left-img">
 					<image src="../../static/youyanji.png"></image>
 				</view>
-			<!-- </navigator>	 -->
-			<!-- <navigator url="../../components/detail/detail"> -->
-			</view>
-			<view class="middle-right" @tap="toUser">
-				<view class="middle-right-text-top">热水器</view>
-				<view class="middle-right-text-middle">深度清洁水垢</view>
-				<view class="middle-right-img">
-					<image src="../../static/热水器.png"></image>
-				</view>
-			</view>
-		</view>
-		<!-- </navigator> -->
-		<!-- <navigator url="../../components/detail/detail"> -->
-		<view class="middle-flex-1" >
-			<view class="middle-left-1" @tap="toUser">
-				<view class="middle-left-text-top-1">空调</view>
-				<view class="middle-left-text-middle-1">深度清洁优化</view>
-				<view class="middle-left-img-1">
-					<image src="../../static/空调.png"></image>
-				</view>
-			<!-- </navigator> -->
 			</view>
 			<view class="middle-right-1">
 				<view class="middle-right-text-top-2">酒店政府企事业单位</view>
@@ -46,6 +25,9 @@
 				<view class="middle-right-img-2">
 				</view>
 			</view>
+		</view>
+		<view class="middle-flex-1" >
+			
 		</view>
 		<swiper class="swiper" :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval" :duration="duration">
 			<swiper-item>
@@ -70,7 +52,14 @@
 				indicatorDots: true,
 				autoplay: true,
 				interval: 2000,
-				duration: 500
+				duration: 500,
+				users:[{name:"空调"},
+				{name:"热水器"},
+				{name:"油烟机"},
+				{name:"路由器"},
+				{name:"冰箱"},
+				{name:"空调"},
+				{name:"空调"},]
 			}
 		},
 		methods: {
@@ -126,23 +115,24 @@
 		justify-content: space-between;
 		margin-left: 30rpx;
 		margin-top: 27rpx;
-		
+		flex-wrap: wrap;
 	}
 
 	.middle-flex .middle-left {
 		width: 330rpx;
 		height: 336rpx;
-		background:rgba(190,194,206,1);
+		background:#f2f3f5;
 		display: flex;
 		justify-content: space-around;
 		flex-direction: column;
 		align-items: center;
+		margin-top: 20rpx;
 	}
 
 	.middle-flex .middle-right {
 		width: 330rpx;
 		height: 336rpx;
-		background:rgba(190,194,206,1);
+		background:#f2f3f5;
 	}
 
 	.middle-flex .middle-left .middle-left-img image {
@@ -193,7 +183,7 @@
 	}
 
 	.middle-flex .middle-right .middle-right-text-middle {
-		width: 130rpx;
+		
 		height: 37rpx;
 		font-size: 26rpx;
 		font-family: PingFangSC;
@@ -222,10 +212,11 @@
 		align-items: center;
 	}
 
-	.middle-flex-1 .middle-right-1 {
+	 .middle-right-1 {
 		width: 330rpx;
 		height: 336rpx;
-		background:rgba(190,194,206,1);
+		background:#f2f3f5;
+		margin-top: 20rpx;
 	}
 
 	.middle-flex-1 .middle-left-1 .middle-left-img-1 image {
@@ -253,7 +244,7 @@
 		line-height: 37rpx;
 	}
 
-	.middle-flex-1 .middle-right-1 {
+	.middle-right-1 {
 		display: flex;
 		justify-content: space-around;
 		flex-direction: column;
@@ -265,16 +256,16 @@
 		height: 152rpx;
 	}
 
-	.middle-flex-1 .middle-right-1 .middle-right-text-top-1 {}
+	 
 
-	.middle-flex-1 .middle-right-1 .middle-right-text-top-2 {
+	 .middle-right-1 .middle-right-text-top-2 {
 		font-size: 32rpx;
 		font-family: PingFangSC;
 		font-weight: 400;
 		color: rgba(51, 51, 51, 1);
 	}
 
-	.middle-flex-1 .middle-right-1 .middle-right-text-top-3 {
+	 .middle-right-1 .middle-right-text-top-3 {
 		font-size: 26rpx;
 	}
 
